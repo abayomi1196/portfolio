@@ -6,15 +6,17 @@ import { About, Projects } from 'sections';
 
 const Home: NextPage = () => {
   return (
-    <Layout>
-      <div id="about">
-        <About />
-      </div>
+    <>
+      <Layout>
+        <div id="about">
+          <About />
+        </div>
 
-      <div id="projects">
-        <Projects />
-      </div>
-    </Layout>
+        <div id="projects">
+          <Projects />
+        </div>
+      </Layout>
+    </>
   );
 };
 

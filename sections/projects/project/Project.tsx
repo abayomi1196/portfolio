@@ -19,7 +19,7 @@ const Project = ({
   url: string;
   title: string;
   stack: string[];
-  image: string;
+  image: string | StaticImageData;
   text: string;
 }) => {
   return (
