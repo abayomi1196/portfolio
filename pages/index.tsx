@@ -1,11 +1,13 @@
 import type { NextPage } from 'next';
 import 'twin.macro';
 
+import Layout from 'sections/Layout';
+
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1>Hello Naija</h1>
-    </div>
+    <Layout>
+      <h1>Main Page</h1>
+    </Layout>
   );
 };
 
