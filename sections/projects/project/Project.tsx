@@ -27,7 +27,14 @@ const Project = ({
       <Link href={url} passHref>
         <ProjectLink className="group" target="_blank" rel="noreferrer">
           <ImageWrapper>
-            <Image src={image} width={1920} height={960} alt={title} />
+            <Image
+              src={image}
+              width={1920}
+              height={960}
+              alt={title}
+              placeholder="blur"
+              objectFit="cover"
+            />
           </ImageWrapper>
 
           <Title>{title}</Title>

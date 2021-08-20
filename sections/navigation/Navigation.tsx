@@ -17,6 +17,7 @@ const Navigation = () => {
 
         <SocialLinksWrapper>
           <Link href="/#about">About</Link>
+          <Link href="/#projects">Projects</Link>
 
           <Bull>&bull;</Bull>
 
