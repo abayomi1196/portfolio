@@ -8,6 +8,10 @@ const CustomStyles = createGlobalStyle`
     scroll-padding-top: 120px;
   }
   
+  body {
+    font-family: 'Inter'
+  }
+
   /**
    * The highlight option of the rough-notation package can sometimes bleed
    * over adjacent words making them unreadable. Use a negative z-index to
