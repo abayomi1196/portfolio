@@ -1,27 +1,22 @@
 import { RoughNotation } from 'react-rough-notation';
 
-const RainbowHighlight = ({
-  color,
-  children,
-}: {
-  color: string;
-  children: string;
-}) => {
+const RainbowCircle = ({ children }: { children: any }) => {
   // animation duration is dependent on text length
-  const animationDuration = Math.floor(30 * children.length);
+  const animationDuration =
+    typeof children === 'string' ? Math.floor(30 * children.length) : 3;
 
   return (
     <RoughNotation
-      type="highlight"
+      type="circle"
       multiline={true}
       padding={[0, 1]}
       iterations={2}
       animationDuration={animationDuration}
-      color={color}
+      color="#000"
     >
       {children}
     </RoughNotation>
   );
 };
 
-export default RainbowHighlight;
+export default RainbowCircle;

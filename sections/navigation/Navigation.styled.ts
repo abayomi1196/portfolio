@@ -1,7 +1,7 @@
 import tw, { styled, css } from 'twin.macro';
 
 export const Wrapper = styled.div(() => [
-  tw`sticky top-0 z-20 bg-white md:(py-6 mb-6)`,
+  tw`container sticky top-0 z-20 bg-white md:(py-6 mb-6)`,
 ]);
 
 export const Container = styled.div(() => [
