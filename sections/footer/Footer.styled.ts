@@ -1,6 +1,6 @@
 import tw, { styled, css } from 'twin.macro';
 
-export const FooterWrapper = tw.div`container mt-24 pb-36`;
+export const FooterWrapper = tw.div`container mt-24 pb-16`;
 
 export const Container = tw.div`max-w-4xl px-4 mx-auto text-gray-800`;
 
