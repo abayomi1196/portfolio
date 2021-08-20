@@ -13,8 +13,8 @@ export const Container = styled.div(() => [
 ]);
 
 export const NameLink = styled.a(() => [
-  tw`font-medium tracking-wider transition-colors text-gray-900 uppercase rounded
-  hover:(text-blue-500) 
-  focus:(text-blue-500 outline-none) 
-  focus-visible:(ring-2 ring-offset-2 ring-blue-500 ring-opacity-60 outline-none)`,
+  tw`font-medium tracking-wider transition-colors text-gray-900 uppercase rounded cursor-pointer
+  hover:(text-sky-500) 
+  focus:(text-sky-500 outline-none) 
+  focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)`,
 ]);

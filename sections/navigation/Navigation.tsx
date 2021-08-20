@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { Container, Wrapper } from './Navigation.styled';
+import { Container, Wrapper, NameLink } from './Navigation.styled';
 
 const Navigation = () => {
   return (
     <Wrapper>
       <Container>
         <Link href="/">
-          <a>Abayomi Ayodele</a>
+          <NameLink>Abayomi Ayodele</NameLink>
         </Link>
       </Container>
     </Wrapper>
