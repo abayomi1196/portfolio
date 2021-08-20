@@ -8,11 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "babelMacros": {
-    "twin": {
-      "preset": "styled-components"
-    }
-  },
   "dependencies": {
     "next": "11.1.0",
     "react": "17.0.2",
