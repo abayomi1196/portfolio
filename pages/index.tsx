@@ -1,8 +1,7 @@
 import type { NextPage } from 'next';
 import 'twin.macro';
 
-import Layout from 'sections/Layout';
-import { About, Projects } from 'sections';
+import { About, Projects, Layout } from 'sections';
 
 const Home: NextPage = () => {
   return (
