@@ -1,7 +1,7 @@
-import tefImg from 'public/projects/tef-preview.png';
-import propexxImg from 'public/projects/propexx-preview.png';
-import netflixImg from 'public/projects/netflix-preview.png';
-import countriesImg from 'public/projects/countries-preview.png';
+import tefImg from '/projects/tef-preview.png';
+import propexxImg from '/projects/propexx-preview.png';
+import netflixImg from '/projects/netflix-preview.png';
+import countriesImg from '/projects/countries-preview.png';
 
 export const projects = [
   {
