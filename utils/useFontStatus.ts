@@ -8,8 +8,7 @@ export const useFontStatus = () => {
 
   useEffect(() => {
     // https://developer.mozilla.org/en-US/docs/Web/API/Document/fonts
-    typeof document !== 'undefined' &&
-      document?.fonts.ready.then(() => setIsReady(true));
+    (document as any).fonts.ready.then(() => setIsReady(true));
   }, []);
 
   return isReady;
