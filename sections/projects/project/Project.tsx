@@ -32,7 +32,6 @@ const Project = ({
               width={1920}
               height={960}
               alt={title}
-              placeholder="blur"
               objectFit="cover"
             />
           </ImageWrapper>
