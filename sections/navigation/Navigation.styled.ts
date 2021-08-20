@@ -18,3 +18,20 @@ export const NameLink = styled.a(() => [
   focus:(text-sky-500 outline-none) 
   focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)`,
 ]);
+
+export const SocialLinksWrapper = styled.div(() => [
+  tw`flex space-x-4 font-medium text-gray-800`,
+
+  css`
+    & a {
+      ${tw`
+        transition-colors 
+        hover:text-sky-500
+        focus:(text-sky-500 outline-none) 
+        focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)
+        `}
+    }
+  `,
+]);
+
+export const Bull = tw.div`text-gray-300`;
