@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Navigation />
-      {children}
+      <main className="antialiased">{children}</main>
       <Footer />
     </>
   );

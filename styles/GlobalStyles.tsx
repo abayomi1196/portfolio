@@ -9,7 +9,8 @@ const CustomStyles = createGlobalStyle`
   }
   
   body {
-    font-family: 'Inter'
+    font-family: 'Inter';
+    padding: 20px;
   }
 
   /**

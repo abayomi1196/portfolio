@@ -6,7 +6,7 @@ import { useFontStatus } from 'utils/useFontStatus';
 import { lightColors } from 'utils/colors';
 import { RoughNotationGroup } from 'react-rough-notation';
 import { RainbowHighlight, RainbowCircle } from 'components';
-import jeanImg from 'public/jean.jpg';
+import horseImg from 'public/horse.jpg';
 
 import { Wrapper, Container } from './About.styled';
 
@@ -38,10 +38,9 @@ const About = () => {
               </p>
 
               <p>
-                I have always been interested and intrigued by modern technology
-                and web development specifically, and have spent a considerable
-                period of time learning, understanding and building practical
-                solutions that encompass both{' '}
+                I have always been intrigued by modern web development, and have
+                amassed great experience building practical solutions that
+                encompass both{' '}
                 <RainbowHighlight color={colors[3]}>front-end</RainbowHighlight>{' '}
                 and{' '}
                 <RainbowHighlight color={colors[0]}>
@@ -72,7 +71,7 @@ const About = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    View my CV?
+                    My CV?
                   </a>
                 </RainbowCircle>
               </p>
@@ -82,7 +81,7 @@ const About = () => {
 
         <div>
           <Image
-            src={jeanImg}
+            src={horseImg}
             alt="Profile"
             placeholder="blur"
             priority={true}

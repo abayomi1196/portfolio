@@ -9,7 +9,7 @@ const RainbowCircle = ({ children }: { children: any }) => {
     <RoughNotation
       type="circle"
       multiline={true}
-      padding={[0, 1]}
+      padding={[5, 5]}
       iterations={2}
       animationDuration={animationDuration}
       color="#000"
