@@ -3,10 +3,7 @@ import Head from 'next/head';
 const SEO = () => (
   <Head>
     <title>Abayomi Ayodele</title>
-    <meta
-      name="description"
-      content="Abayomi Ayodele Portolio. React, Next, Node Developer"
-    />
+    <meta name="description" content="Frontend/React Developer" />
 
     {/* site title */}
     <meta property="og:title" content="Abayomi Ayodele" key="ogtitle" />
@@ -14,7 +11,7 @@ const SEO = () => (
     {/* site desc */}
     <meta
       property="og:description"
-      content="Abayomi Ayodele Portolio. React, Next, Node Developer"
+      content="Frontend/React Developer"
       key="ogdesc"
     />
 
