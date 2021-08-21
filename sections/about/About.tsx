@@ -38,15 +38,28 @@ const About = () => {
               </p>
 
               <p>
-                I have always been intrigued by modern web development, and have
-                amassed great experience building practical solutions that
-                encompass both{' '}
-                <RainbowHighlight color={colors[3]}>front-end</RainbowHighlight>{' '}
-                and{' '}
+                I am a{' '}
+                <RainbowHighlight color={colors[3]}>
+                  front-end developer
+                </RainbowHighlight>{' '}
+                with growing experience in Computer Science &amp; Modern Web
+                Development . I am particularly interested in{' '}
                 <RainbowHighlight color={colors[0]}>
-                  {'back-end web development'}
+                  {'client-side web development'}
                 </RainbowHighlight>
                 .
+              </p>
+              <p>
+                I’ve always enjoyed taking on challenges centered around
+                frontend engineering and am well versed in{' '}
+                <RainbowHighlight color={colors[3]}>
+                  modern web standards
+                </RainbowHighlight>{' '}
+                i.e <span style={{ fontWeight: 'bold' }}>ES6+</span>,
+                <span style={{ fontWeight: 'bold' }}>Typescript</span>,&amp;{' '}
+                <span style={{ fontWeight: 'bold' }}>React/Redux</span> .
+                Currently interested in Javascript for backend web development
+                &amp; GraphQL specifically.
               </p>
 
               <p>
