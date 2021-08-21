@@ -12,9 +12,7 @@ const Projects = () => {
         // className="max-w-4xl mx-auto"
       >
         <Title>Recent Projects</Title>
-        <SubTitle>
-          Brief overview of some personal and freelance projects
-        </SubTitle>
+        <SubTitle>Brief overview of recent projects</SubTitle>
 
         <ProjectsContainer>
           {projects.map((project) => (

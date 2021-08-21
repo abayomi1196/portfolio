@@ -11,7 +11,8 @@ import {
   Title,
   ProjectLink,
   Description,
-} from './singleProject.styled';
+  StackList,
+} from 'styles/singleProject.styled';
 /**
  * de-structure the project name from the router.query & search
  * the projects data to find a match.
@@ -64,6 +65,12 @@ const SingleProject: NextPage = () => {
               </ProjectLink>
             </p>
           )}
+
+          <StackList>
+            {projectDetails?.stack.map((tech, id) => (
+              <li key={id}>{tech}</li>
+            ))}
+          </StackList>
 
           <Description>{projectDetails?.text}</Description>
         </Container>
