@@ -12,7 +12,7 @@ export const ImageWrapper = styled.div(() => [tw`mb-4 relative rounded-lg`]);
 
 export const Title = tw.h2`text-lg font-bold mb-3 group-hover:text-sky-500`;
 
-export const Description = tw.p`text-gray-800 mt-3 mb-10`;
+export const Description = tw.p`text-gray-800 line-clamp-2 mt-3 mb-10`;
 
 export const StackList = styled.ul(() => [
   tw`list-none m-0 flex flex-wrap gap-2`,

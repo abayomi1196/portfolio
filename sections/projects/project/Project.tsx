@@ -24,8 +24,8 @@ const Project = ({
 }) => {
   return (
     <div className="shadow-2xl">
-      <Link href={url} passHref>
-        <ProjectLink className="group" target="_blank" rel="noreferrer">
+      <Link href={`/project/${title}`} passHref>
+        <ProjectLink className="group">
           <ImageWrapper>
             <Image
               src={image}

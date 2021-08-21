@@ -1,4 +1,13 @@
-export const projects = [
+type projectType = {
+  title: string;
+  image: string;
+  stack: string[];
+  url: string;
+  github?: string;
+  text: string;
+};
+
+export const projects: projectType[] = [
   {
     title: 'TEF Restaurant',
     image:
@@ -22,6 +31,7 @@ export const projects = [
       'https://res.cloudinary.com/ayo-clodinary/image/upload/v1629496485/netflix-preview_l1zrjm.png',
     stack: ['React', 'SASS', 'Firebase'],
     url: 'https://ayosnetflixclone2.netlify.app/',
+    github: 'https://github.com/AbayomiAyodele/netflix-clone',
     text: "A beginner's attempt at cloning the popular streaming service. built primarily to master basic to intermediate React topics, also an introduction to Firebase",
   },
   {
@@ -30,6 +40,7 @@ export const projects = [
       'https://res.cloudinary.com/ayo-clodinary/image/upload/v1629496452/countries-preview_f53inu.png',
     stack: ['React', 'SASS'],
     url: 'https://ayoscountries2.netlify.app/',
+    github: 'https://github.com/AbayomiAyodele/countries-of-the-world',
     text: 'A front-end challenge that required me to integrate with the REST Countries API to pull country data and display it like in the designs.',
   },
 ];
