@@ -78,14 +78,13 @@ const About = () => {
               </p>
 
               <p>
-                I&apos;m currently looking for a new role.{' '}
                 <RainbowCircle>
                   <a
                     href="https://drive.google.com/file/d/1cISCN2nfSivP6HqZ8uH6vH3ImI2fFfah/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    My CV?
+                    View My CV?
                   </a>
                 </RainbowCircle>
               </p>

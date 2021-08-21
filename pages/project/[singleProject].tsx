@@ -61,7 +61,7 @@ const SingleProject: NextPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {projectDetails.url}
+                {projectDetails.github}
               </ProjectLink>
             </p>
           )}
