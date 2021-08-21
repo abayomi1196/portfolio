@@ -59,7 +59,8 @@ const About = () => {
                 <span style={{ fontWeight: 'bold' }}>Typescript</span>,&amp;{' '}
                 <span style={{ fontWeight: 'bold' }}>React/Redux</span> .
                 Currently interested in Javascript for backend web development
-                &amp; GraphQL specifically.
+                &amp; <span style={{ fontWeight: 'bold' }}>GraphQL</span>{' '}
+                specifically.
               </p>
 
               <p>
