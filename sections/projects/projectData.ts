@@ -24,7 +24,7 @@ export const projects: projectType[] = [
     stack: ['NextJS', 'TailwindCSS', 'Styled Components'],
     url: 'https://portfolio-ayodele.vercel.app/',
     github: 'https://github.com/AbayomiAyodele/portfolio',
-    text: 'My personal website, that contains some details about me, and about some of my previous and most impressive work. NextJS was used to take advantage of Static Site Generation and pre-render the static pages. Styling was handled in a hybrid fashion - both CSS in JS approach and Utility Classes. This was made possible through an external package - Twin.Macro. I also used Typescript to help in the development process.',
+    text: 'My personal website, that contains some details about me, and about some of my previous and most impressive work. Styling was handled in a hybrid fashion - both CSS in JS approach and Utility Classes. This was made possible through an external package - Twin.Macro. I also used Typescript to help in the development process.',
   },
   {
     title: 'Netflix Clone',
