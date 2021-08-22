@@ -25,7 +25,7 @@ const SEO = () => (
       content="https://portfolio-ayodele.vercel.app/"
       key="ogurl"
     />
-    <meta property="og-locale" content="en-NG" />
+    <meta property="og-locale" content="en-GB" />
     <meta property="og-type" content="website" />
     <meta property="og:image" content="/horse.jpg" key="ogimage" />
     <meta property="og:site_name" content="Abayomi Ayodele" key="ogsitename" />
