@@ -2,8 +2,11 @@ import Head from 'next/head';
 
 const SEO = () => (
   <Head>
-    <title>Abayomi Ayodele | Frontend Developer &amp; NBA Enthusiast</title>
-    <meta name="description" content="Frontend/React Developer" />
+    <title>Abayomi Ayodele | Frontend/React Developer</title>
+    <meta
+      name="description"
+      content="I am a Frontend (React) developer, with growing experience in Computer Science &amp; Modern Web Development. I am particularly interested in client-side web development."
+    />
 
     {/* Open Graph SEO */}
     <meta
