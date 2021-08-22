@@ -80,7 +80,7 @@ const About = () => {
               <p>
                 <RainbowCircle>
                   <a
-                    href="https://drive.google.com/file/d/1cISCN2nfSivP6HqZ8uH6vH3ImI2fFfah/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1cJTX5VTocD9lx4_i_GfJ8v-fCiSKKspB/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                   >
