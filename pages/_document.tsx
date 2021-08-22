@@ -35,7 +35,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en-GB">
         <Head>
           {/* fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
