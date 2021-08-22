@@ -7,7 +7,7 @@ const SEO = () => (
       name="description"
       content="I am a Frontend (React) developer, with growing experience in Modern Web Development. I am particularly interested in client-side web development."
     />
-    <meta name="author" content="Abayomi Ayodele"/>
+    <meta name="author" content="Abayomi Ayodele" />
 
     {/* Open Graph SEO */}
     <meta
@@ -48,7 +48,10 @@ const SEO = () => (
       content="I am a Frontend (React) developer, with growing experience in Modern Web Development. I am particularly interested in client-side web development."
     />
 
-    <meta name="twitter:image" content="/horse.jpg" />
+    <meta
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/78866624?v=4"
+    />
 
     <meta name="twitter:url" content="https://portfolio-ayodele.vercel.app/" />
     {/* End of Twitter SEO */}
