@@ -8,12 +8,12 @@ const SEO = () => (
     {/* Open Graph SEO */}
     <meta
       property="og:title"
-      content="Abayomi Ayodele | Frontend Developer &amp; NBA Enthusiast"
+      content="Abayomi Ayodele | Frontend/React Developer"
       key="ogtitle"
     />
     <meta
       property="og:description"
-      content="Frontend/React Developer"
+      content="I am a Frontend (React) developer, with growing experience in Computer Science &amp; Modern Web Development. I am particularly interested in client-side web development."
       key="ogdesc"
     />
     <meta
@@ -36,10 +36,13 @@ const SEO = () => (
     />
     <meta
       name="twitter:title"
-      content="Abayomi Ayodele | Frontend Developer &amp; NBA Enthusiast"
+      content="Abayomi Ayodele | Frontend/React Developer"
     />
 
-    <meta name="twitter:description" content="Frontend/React Developer" />
+    <meta
+      name="twitter:description"
+      content="I am a Frontend (React) developer, with growing experience in Computer Science &amp; Modern Web Development. I am particularly interested in client-side web development."
+    />
 
     <meta name="twitter:image" content="/horse.jpg" />
 
