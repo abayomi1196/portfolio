@@ -32,8 +32,11 @@ const SEO = () => (
     {/* End of Open Graph SEO */}
 
     {/* Twitter SEO */}
-    <meta name="twitter:card" content="/horse.jpg" />
+    <meta name="twitter:card" content="summary" />
+
     <meta name="twitter:site" content="Abayomi Ayodele" />
+
+    <meta name="twitter:creator" content="@sirkamara" />
     <meta
       name="twitter:domain"
       content="https://portfolio-ayodele.vercel.app/"
