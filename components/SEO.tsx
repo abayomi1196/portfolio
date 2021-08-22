@@ -27,11 +27,7 @@ const SEO = () => (
     />
     <meta property="og-locale" content="en-NG" />
     <meta property="og-type" content="website" />
-    <meta
-      property="og:image"
-      content="https://res.cloudinary.com/ayo-clodinary/image/upload/v1629665194/78866624_y7yqv0.jpg"
-      key="ogimage"
-    />
+    <meta property="og:image" content="/horse.jpg" key="ogimage" />
     <meta property="og:site_name" content="Abayomi Ayodele" key="ogsitename" />
     {/* End of Open Graph SEO */}
 
