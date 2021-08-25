@@ -57,7 +57,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - `utils`: reusable utility functions
 
-**NOTE**: Both the sections & components directories have a file called `index.js` that allows exporting the content of same directory to other root level directories using absolute imports.
+**NOTE**: Both the sections & components directories have a file called `index.ts` that allows exporting the content of same directory to other root level directories using absolute imports.
 
 
 
