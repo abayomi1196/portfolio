@@ -64,7 +64,7 @@ const About = () => {
               </p>
 
               <p>
-                Through these experiences, I&apos;ve been privileged to
+                Using this skillset, I&apos;ve been privileged to
                 contribute significantly to both small and large teams,
                 impacting real world projects with my{' '}
                 <RainbowHighlight color={colors[0]}>
