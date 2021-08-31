@@ -12,6 +12,8 @@ const CustomStyles = createGlobalStyle`
   body {
     font-family: 'Inter';
     padding: 20px;
+    display: flex;
+    justify-content: center;
   }
 `;
 
