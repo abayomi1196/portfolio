@@ -1,6 +1,6 @@
 import tw, { styled, css } from 'twin.macro';
 
-export const Wrapper = tw.div`container px-4 mt-12`;
+export const Wrapper = tw.div`container px-4 mt-12 mx-auto`;
 
 export const Container = tw.div`
   max-w-4xl mx-auto px-4
