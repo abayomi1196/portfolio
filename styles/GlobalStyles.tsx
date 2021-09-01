@@ -10,7 +10,7 @@ const CustomStyles = createGlobalStyle`
   }
   
   body {
-    font-family: 'Inter';
+    font-family: 'Ubuntu';
     padding: 20px;
     display: flex;
     justify-content: center;
