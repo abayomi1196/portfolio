@@ -1,21 +1,28 @@
+// @ts-nocheck
+
 import { Wrapper, Container, SkillsSection } from './About.styled';
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
   return (
     <Wrapper>
       <Container>
         <div>
-          <h1>
-            <span role="img" aria-label="waving emoji">
-              👋
-            </span>{' '}
-            Hello world. I&apos;m
-          </h1>
+          <Fade top>
+            <h1>
+              <span role="img" aria-label="waving emoji">
+                👋
+              </span>{' '}
+              Hello world. I&apos;m
+            </h1>
+          </Fade>
 
-          <h2>Abayomi Ayodele.</h2>
-          <h3>
-            Front End <span>Developer</span> based in Abuja, Nigeria.
-          </h3>
+          <Fade bottom>
+            <h2>Abayomi Ayodele.</h2>
+            <h3>
+              Front End <span>Developer</span> based in Abuja, Nigeria.
+            </h3>
+          </Fade>
 
           <div>
             <p>

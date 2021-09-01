@@ -1,5 +1,8 @@
+// @ts-nocheck
+
 import { Wrapper, Container } from './Contact.styled';
 import Image from 'next/image';
+import Fade from 'react-reveal/Fade';
 
 import horseImg from 'public/horse.jpg';
 
@@ -21,15 +24,17 @@ const Contact = () => (
       </div>
 
       <div>
-        <Image
-          src={horseImg}
-          alt="Profile"
-          placeholder="blur"
-          className="rounded-full"
-          objectFit="cover"
-          width={200}
-          height={200}
-        />
+        <Fade left>
+          <Image
+            src={horseImg}
+            alt="Profile"
+            placeholder="blur"
+            className="rounded-full"
+            objectFit="cover"
+            width={200}
+            height={200}
+          />
+        </Fade>
       </div>
     </Container>
   </Wrapper>

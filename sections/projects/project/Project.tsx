@@ -40,7 +40,7 @@ const Project = ({
 
           <Description>{text}</Description>
 
-          <MoreLink>View More</MoreLink>
+          <MoreLink>Read More</MoreLink>
         </ProjectLink>
       </Link>
     </div>
