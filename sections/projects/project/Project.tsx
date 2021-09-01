@@ -32,7 +32,7 @@ const Project = ({
               alt={title}
               width={1920}
               height={768}
-              objectFit="contain"
+              objectFit="cover"
             />
           </ImageWrapper>
 
