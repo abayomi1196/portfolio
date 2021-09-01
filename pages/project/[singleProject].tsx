@@ -104,13 +104,11 @@ const SingleProject: NextPage = () => {
 
           <OtherProjects>
             I also built:{' '}
-            <p>
-              {projectDetails?.otherProjects.map((item) => (
-                <Link href={item.link} key={item.link}>
-                  {item.name}
-                </Link>
-              ))}
-            </p>
+            {projectDetails?.otherProjects.map((item) => (
+              <Link href={item.link} key={item.link}>
+                {item.name}
+              </Link>
+            ))}
           </OtherProjects>
         </Container>
       </Wrapper>
