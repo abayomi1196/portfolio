@@ -9,7 +9,7 @@ export const ProjectLink = styled.a(() => [
 ]);
 
 export const ImageWrapper = styled.div(() => [
-  tw`mb-4 rounded-lg h-64 w-96 relative`,
+  tw`mb-4 rounded-lg relative`,
 
   css`
     & img {

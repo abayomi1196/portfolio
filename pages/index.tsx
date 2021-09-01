@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import 'twin.macro';
 
-import { About, Projects, Layout } from 'sections';
+import { About, Projects, Layout, Contact } from 'sections';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +13,10 @@ const Home: NextPage = () => {
 
         <div id="projects">
           <Projects />
+        </div>
+
+        <div id="contact">
+          <Contact />
         </div>
       </Layout>
     </>

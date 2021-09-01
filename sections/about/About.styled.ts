@@ -3,7 +3,7 @@ import tw, { styled, css } from 'twin.macro';
 export const Wrapper = tw.div`container px-4 mt-8 `;
 
 export const Container = styled.div(() => [
-  tw`space-x-5 max-w-4xl py-12 mx-auto`,
+  tw` max-w-4xl py-12 mx-auto`,
 
   css`
     & > div {
@@ -11,13 +11,13 @@ export const Container = styled.div(() => [
 
       h1 {
         ${tw`
-          leading-4 text-lg tracking-wider mb-1 font-light text-gray-400 
+          leading-4 text-lg tracking-wider font-light text-gray-400 
           lg:(text-2xl) 
         `}
       }
 
       h2 {
-        ${tw`font-bold text-gray-700 mb-2 text-3xl lg:(text-5xl)`}
+        ${tw`font-bold text-gray-700 mt-5 mb-3 text-3xl lg:(text-5xl)`}
       }
 
       h3 {
