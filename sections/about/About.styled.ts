@@ -29,10 +29,10 @@ export const Container = styled.div(() => [
       }
 
       & > div {
-        ${tw`mt-12 text-gray-500 leading-7 `}
+        ${tw`mt-12 text-gray-400 leading-7 `}
 
         p {
-          ${tw`my-2 tracking-wide`}
+          ${tw`my-2 tracking-wide lg:(text-lg)`}
         }
       }
     }
