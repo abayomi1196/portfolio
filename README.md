@@ -2,7 +2,7 @@ This page was built with [Next.js](https://nextjs.org/), [Typescript](https://ww
 
 # [Portfolio Site](https://portfolio-ayodele.vercel.app/)
 
-![](https://res.cloudinary.com/ayo-clodinary/image/upload/v1629498046/portfolio_xua6mv.png)
+![](https://res.cloudinary.com/ayo-clodinary/image/upload/v1630496572/Screenshot_from_2021-09-01_12-38-07_ip6uka.png)
 
 Build setup:
 
