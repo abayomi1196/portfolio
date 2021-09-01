@@ -1,45 +1,47 @@
 import tw, { styled, css } from 'twin.macro';
 
-export const Wrapper = tw.div`container px-4 mt-12`;
+export const Wrapper = tw.div`container px-4 mt-12 h-full`;
 
 export const Container = styled.div(() => [
-  tw`space-x-5 max-w-4xl items-start mx-auto lg:(flex space-y-24) `,
+  tw`space-x-5 max-w-4xl py-12 mx-auto`,
 
   css`
-    & > div:first-of-type {
+    & > div {
       ${tw`lg:px-4`}
 
       h1 {
-        ${tw`text-2xl font-bold text-gray-900 lg:(text-4xl)`}
+        ${tw`
+          leading-4 text-lg tracking-wider mb-1 font-light text-gray-400 
+          lg:(text-2xl) 
+        `}
+      }
+
+      h2 {
+        ${tw`font-bold text-gray-700 mb-2 text-3xl lg:(text-5xl)`}
+      }
+
+      h3 {
+        ${tw`font-normal text-gray-500 mt-0.5 text-xl lg:(text-4xl)`}
+
+        & > span {
+          ${tw`text-sky-500`}
+        }
       }
 
       & > div {
-        ${tw`mt-4 text-gray-800`}
+        ${tw`mt-12 text-gray-500 leading-7 `}
 
         p {
-          ${tw`my-2`}
+          ${tw`my-2 tracking-wide`}
 
           &:last-of-type {
             ${tw`my-4`}
           }
 
-          a {
-            ${tw`
-                transition-colors 
-                hover:text-sky-500
-                focus:(text-sky-500 outline-none) 
-                focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)
-            `}
+          & > span {
+            ${tw`font-bold  inline-block mx-0.5 text-sky-500`}
           }
         }
-      }
-    }
-
-    & > div:last-of-type {
-      ${tw`flex-shrink-0 align-self['top'] mt-12 lg:(px-4 mt-0)`}
-
-      img {
-        border-radius: 100%;
       }
     }
   `,
