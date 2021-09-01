@@ -1,6 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro';
+import { GlobalStyles as BaseStyles } from 'twin.macro';
 
 const CustomStyles = createGlobalStyle`
   html {
@@ -10,7 +10,6 @@ const CustomStyles = createGlobalStyle`
   }
   
   body {
-    font-family: 'Ubuntu';
     padding: 20px;
     display: flex;
     justify-content: center;

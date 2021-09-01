@@ -17,24 +17,8 @@ const Navigation = () => {
 
         <SocialLinksWrapper>
           <Link href="/#about">About</Link>
-          <Link href="/#projects">Projects</Link>
-
           <Bull>&bull;</Bull>
-
-          <a
-            href="https://twitter.com/SirKamara"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Twitter
-          </a>
-          <a
-            href="https://github.com/AbayomiAyodele"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
+          <Link href="/#projects">Projects</Link>
         </SocialLinksWrapper>
       </Container>
     </Wrapper>
