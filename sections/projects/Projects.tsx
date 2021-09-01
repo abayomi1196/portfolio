@@ -1,4 +1,10 @@
-import { Wrapper, Title, SubTitle, ProjectsContainer } from './Projects.styled';
+import {
+  Wrapper,
+  Title,
+  SubTitle,
+  ProjectsContainer,
+  Container,
+} from './Projects.styled';
 
 import Project from './project/Project';
 import { projects } from './projectData';
@@ -6,11 +12,7 @@ import { projects } from './projectData';
 const Projects = () => {
   return (
     <Wrapper>
-      {/* complete work on style */}
-      <div
-        style={{ maxWidth: '54rem', margin: '0 auto' }}
-        // className="max-w-4xl mx-auto"
-      >
+      <Container>
         <Title>Stuff I&apos;ve Worked On.</Title>
         <SubTitle>
           Whether in my free time, or freelancing, I like to keep busy.{' '}
@@ -29,7 +31,7 @@ const Projects = () => {
             </div>
           ))}
         </ProjectsContainer>
-      </div>
+      </Container>
     </Wrapper>
   );
 };

@@ -6,7 +6,7 @@ import {
   ImageWrapper,
   ProjectLink,
   Title,
-  StackList,
+  MoreLink,
 } from './Project.styled';
 
 const Project = ({
@@ -23,33 +23,18 @@ const Project = ({
   text: string;
 }) => {
   return (
-    <div className="shadow-2xl">
+    <div>
       <Link href={`/project/${title}`} passHref>
         <ProjectLink className="group">
           <ImageWrapper>
-            <Image
-              src={image}
-              width={1920}
-              height={960}
-              alt={title}
-              objectFit="cover"
-            />
+            <Image src={image} alt={title} layout="fill" objectFit="contain" />
           </ImageWrapper>
 
           <Title>{title}</Title>
 
-          <StackList>
-            {stack.map((tech, id) => (
-              <li
-                key={id}
-                className="bg-sky-200 rounded-lg py-2 px-4 inline-block mx-3"
-              >
-                {tech}
-              </li>
-            ))}
-          </StackList>
-
           <Description>{text}</Description>
+
+          <MoreLink>View More</MoreLink>
         </ProjectLink>
       </Link>
     </div>

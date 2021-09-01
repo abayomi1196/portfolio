@@ -5,7 +5,12 @@ const About = () => {
     <Wrapper>
       <Container>
         <div>
-          <h1>Hello world. I&apos;m</h1>
+          <h1>
+            <span role="img" aria-label="waving emoji">
+              👋
+            </span>{' '}
+            Hello world. I&apos;m
+          </h1>
 
           <h2>Abayomi Ayodele.</h2>
           <h3>
