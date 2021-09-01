@@ -1,6 +1,11 @@
 import type { NextPage } from 'next';
+import { useEffect } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
+
 import { projects } from 'sections/projects/projectData';
 
 import { Layout } from 'sections';
@@ -13,11 +18,7 @@ import {
   Description,
   StackList,
 } from 'styles/singleProject.styled';
-/**
- * de-structure the project name from the router.query & search
- * the projects data to find a match.
- * @returns JSX
- */
+
 const SingleProject: NextPage = () => {
   const router = useRouter();
   const { singleProject } = router.query;

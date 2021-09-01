@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 import {
   Container,
   Wrapper,
@@ -16,9 +17,25 @@ const Navigation = () => {
         </Link>
 
         <SocialLinksWrapper>
-          <Link href="/#about">About</Link>
+          <ScrollLink
+            activeClass="text-sky-500"
+            to="about"
+            offset={-50}
+            smooth={true}
+            duration={500}
+          >
+            <a href="#about">About</a>
+          </ScrollLink>
           <Bull>&bull;</Bull>
-          <Link href="/#projects">Projects</Link>
+          <ScrollLink
+            activeClass="text-sky-500"
+            to="projects"
+            offset={-150}
+            smooth={true}
+            duration={500}
+          >
+            <a href="#projects">Projects</a>
+          </ScrollLink>
         </SocialLinksWrapper>
       </Container>
     </Wrapper>

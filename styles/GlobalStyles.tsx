@@ -6,7 +6,6 @@ const CustomStyles = createGlobalStyle`
   html {
     /* give title some breathing room when we scroll towards them */
     scroll-padding-top: 120px;
-    scroll-behavior: smooth;
   }
   
   body {

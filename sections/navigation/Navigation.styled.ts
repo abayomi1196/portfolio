@@ -20,12 +20,12 @@ export const NameLink = styled.a(() => [
 ]);
 
 export const SocialLinksWrapper = styled.div(() => [
-  tw`flex space-x-4 font-medium text-gray-700`,
+  tw`flex space-x-4 font-medium text-gray-600`,
 
   css`
     & a {
       ${tw`
-        transition-colors 
+        transition-colors cursor-pointer
         hover:text-sky-500
         focus:(text-sky-500 outline-none) 
         focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)

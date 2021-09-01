@@ -24,7 +24,7 @@ const Contact = () => (
       </div>
 
       <div>
-        <Fade left>
+        <Fade left delay={500}>
           <Image
             src={horseImg}
             alt="Profile"
