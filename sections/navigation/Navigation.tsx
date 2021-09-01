@@ -24,7 +24,7 @@ const Navigation = () => {
             smooth={true}
             duration={500}
           >
-            <a href="#about">About</a>
+            <a>About</a>
           </ScrollLink>
           <Bull>&bull;</Bull>
           <ScrollLink
@@ -34,7 +34,7 @@ const Navigation = () => {
             smooth={true}
             duration={500}
           >
-            <a href="#projects">Projects</a>
+            <a>Projects</a>
           </ScrollLink>
         </SocialLinksWrapper>
       </Container>
