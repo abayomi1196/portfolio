@@ -1,4 +1,4 @@
-import { Wrapper, Container } from './About.styled';
+import { Wrapper, Container, SkillsSection } from './About.styled';
 
 const About = () => {
   return (
@@ -24,13 +24,24 @@ const About = () => {
               By dedicating a lot of my free time to learning and practice,
               collaborating on freelance projects & professional experience,
               i&apos;ve been able to gain a solid understanding of the following
-              technologies: <span>HTML5 / CSS3</span>, <span>SASS</span>,
-              <span>JavaScript ES6+</span>, <span>Typescript</span>,{' '}
-              <span>React/Redux</span>, <span>Styled Components</span>,{' '}
-              <span>TailwindCSS</span>, <span>NextJS</span> &amp;{' '}
-              <span>Git and Github</span>. Currently interested in Javascript
-              for backend web development &amp; learning the <span>MERN</span>{' '}
-              stack specifically.
+              technologies:
+              <SkillsSection>
+                <ul>
+                  <li>HTML5+ / CSS3</li>
+                  <li>JavaScript ES6+</li>
+                  <li>SASS</li>
+                </ul>
+                <ul>
+                  <li>React / Redux</li>
+                  <li>Styled Components</li>
+                  <li>TailwindCSS</li>
+                </ul>
+                <ul>
+                  <li>Typescript</li>
+                  <li>NextJS</li>
+                  <li>Git and Github</li>
+                </ul>
+              </SkillsSection>
             </p>
           </div>
         </div>

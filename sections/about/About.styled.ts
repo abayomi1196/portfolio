@@ -1,6 +1,6 @@
 import tw, { styled, css } from 'twin.macro';
 
-export const Wrapper = tw.div`container px-4 mt-12 h-full`;
+export const Wrapper = tw.div`container px-4 mt-8 `;
 
 export const Container = styled.div(() => [
   tw`space-x-5 max-w-4xl py-12 mx-auto`,
@@ -33,15 +33,21 @@ export const Container = styled.div(() => [
 
         p {
           ${tw`my-2 tracking-wide`}
-
-          &:last-of-type {
-            ${tw`my-4`}
-          }
-
-          & > span {
-            ${tw`font-bold  inline-block mx-0.5 text-sky-500`}
-          }
         }
+      }
+    }
+  `,
+]);
+
+export const SkillsSection = styled.div(() => [
+  tw`my-5 pl-5 lg:(flex space-x-20)`,
+
+  css`
+    & ul {
+      ${tw`font-bold list-disc`}
+
+      li {
+        ${tw`my-2 tracking-wider text-sky-600`}
       }
     }
   `,

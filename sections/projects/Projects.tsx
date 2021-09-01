@@ -11,8 +11,10 @@ const Projects = () => {
         style={{ maxWidth: '54rem', margin: '0 auto' }}
         // className="max-w-4xl mx-auto"
       >
-        <Title>Recent Projects</Title>
-        <SubTitle>Brief overview of recent projects</SubTitle>
+        <Title>Stuff I&apos;ve Worked On.</Title>
+        <SubTitle>
+          Whether in my free time, or freelancing, I like to keep busy.{' '}
+        </SubTitle>
 
         <ProjectsContainer>
           {projects.map((project) => (
