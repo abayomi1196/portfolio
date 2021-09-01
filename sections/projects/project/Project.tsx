@@ -10,21 +10,19 @@ import {
 } from './Project.styled';
 
 const Project = ({
-  url,
   title,
-  stack,
+  slug,
   image,
-  text,
+  summary,
 }: {
-  url: string;
   title: string;
-  stack: string[];
+  slug: string;
   image: string | StaticImageData;
-  text: string;
+  summary: string;
 }) => {
   return (
     <div>
-      <Link href={`/project/${title}`} passHref>
+      <Link href={`/project/${slug}`} passHref>
         <ProjectLink className="group">
           <ImageWrapper>
             <Image
@@ -38,7 +36,7 @@ const Project = ({
 
           <Title>{title}</Title>
 
-          <Description>{text}</Description>
+          <Description>{summary}</Description>
 
           <MoreLink>Read More</MoreLink>
         </ProjectLink>

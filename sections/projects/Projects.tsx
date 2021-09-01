@@ -25,11 +25,10 @@ const Projects = () => {
             {projects.map((project) => (
               <div key={project.url} className="mt-10">
                 <Project
-                  url={project.url}
+                  slug={project.slug}
                   title={project.title}
-                  stack={project.stack}
                   image={project.image}
-                  text={project.text}
+                  summary={project.summary}
                 />
               </div>
             ))}

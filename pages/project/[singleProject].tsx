@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import { useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 // @ts-ignore
@@ -17,6 +17,9 @@ import {
   ProjectLink,
   Description,
   StackList,
+  ImageWrapper,
+  Details,
+  OtherProjects,
 } from 'styles/singleProject.styled';
 
 const SingleProject: NextPage = () => {
@@ -24,56 +27,91 @@ const SingleProject: NextPage = () => {
   const { singleProject } = router.query;
 
   const projectDetails = projects.find(
-    (project) => project.title === singleProject
+    (project) => project.slug === singleProject
   );
 
   return (
     <Layout>
       <Wrapper>
         <Container>
-          <Title>{projectDetails?.title}</Title>
+          <Fade bottom>
+            <Title>
+              {projectDetails?.title}{' '}
+              {projectDetails?.inDevelopment && <small>In Development</small>}{' '}
+            </Title>
+          </Fade>
+
+          <Fade bottom={500}>
+            <Description>{projectDetails?.summary}</Description>
+            <p>
+              <span>
+                <ProjectLink
+                  href={projectDetails?.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Site
+                </ProjectLink>
+              </span>
+
+              {projectDetails?.github && (
+                <span>
+                  <ProjectLink
+                    href={projectDetails.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Code
+                  </ProjectLink>
+                </span>
+              )}
+            </p>
+          </Fade>
 
           {projectDetails ? (
-            <Image
-              src={projectDetails.image}
-              alt={projectDetails.title}
-              width={1920}
-              height={768}
-              objectFit="cover"
-            />
-          ) : null}
-
-          <p>
-            <strong>Live: </strong>
-            <ProjectLink
-              href={projectDetails?.url}
+            <ImageWrapper
+              href={projectDetails.url}
               target="_blank"
               rel="noreferrer"
             >
-              {projectDetails?.url}
-            </ProjectLink>
-          </p>
+              <Image
+                src={projectDetails.image}
+                alt={projectDetails.title}
+                width={1920}
+                height={768}
+                objectFit="cover"
+              />
+            </ImageWrapper>
+          ) : null}
 
-          {projectDetails?.github && (
+          <Fade bottom delay={800}>
+            <StackList>
+              {projectDetails?.stack.map((tech, id) => (
+                <li key={id}>{tech}</li>
+              ))}
+            </StackList>
+          </Fade>
+
+          <Details>
+            <h3>Implementation</h3>
+            <p>{projectDetails?.implementation}</p>
+          </Details>
+
+          <Details>
+            <h3>Lessons Learned</h3>
+            <p>{projectDetails?.lessonsLearned}</p>
+          </Details>
+
+          <OtherProjects>
+            I also built:{' '}
             <p>
-              <strong>Code: </strong>
-              <ProjectLink
-                href={projectDetails.github}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {projectDetails.github}
-              </ProjectLink>
+              {projectDetails?.otherProjects.map((item) => (
+                <Link href={item.link} key={item.link}>
+                  {item.name}
+                </Link>
+              ))}
             </p>
-          )}
-
-          <StackList>
-            {projectDetails?.stack.map((tech, id) => (
-              <li key={id}>{tech}</li>
-            ))}
-          </StackList>
-
-          <Description>{projectDetails?.text}</Description>
+          </OtherProjects>
         </Container>
       </Wrapper>
     </Layout>
