@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 import {
