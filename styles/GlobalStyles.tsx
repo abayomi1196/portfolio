@@ -1,6 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { GlobalStyles as BaseStyles } from 'twin.macro';
+import tw, { GlobalStyles as BaseStyles } from 'twin.macro';
 
 const CustomStyles = createGlobalStyle`
   html {
@@ -12,6 +12,7 @@ const CustomStyles = createGlobalStyle`
     padding: 20px;
     display: flex;
     justify-content: center;
+    ${tw`dark:bg-gray-600`}
   }
 `;
 

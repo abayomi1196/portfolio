@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 
 import { projects } from 'sections/projects/projectData';
 
-import { Layout } from 'sections';
+import { Layout, Contact } from 'sections';
 
 import {
   Container,
@@ -110,6 +110,8 @@ const SingleProject: NextPage = () => {
               </Link>
             ))}
           </OtherProjects>
+
+          <Contact />
         </Container>
       </Wrapper>
     </Layout>

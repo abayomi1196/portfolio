@@ -8,11 +8,19 @@ export const Container = styled.div(() => [
   css`
     & > div:first-of-type {
       > h3 {
-        ${tw`text-2xl font-bold text-gray-700 lg:(text-3xl)`}
+        ${tw`
+          text-2xl font-bold text-gray-700 
+          lg:(text-3xl)
+          dark:(text-sky-100)
+          `}
       }
 
       > p {
-        ${tw`mt-3 text-base lg:(text-lg) text-gray-400`}
+        ${tw`
+          mt-3 text-base text-gray-400
+          lg:(text-lg) 
+          dark:(text-gray-300)
+        `}
 
         & > strong {
           ${tw`text-sky-500`}
@@ -22,8 +30,8 @@ export const Container = styled.div(() => [
       a {
         ${tw`
           mt-5 text-sky-500 inline-block
-          hover:(text-sky-800 underline) 
-          focus:(text-sky-800 underline)
+          hocus:(text-sky-800 underline) 
+          dark:(hocus:(text-sky-100))
         `}
       }
     }

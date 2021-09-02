@@ -9,7 +9,8 @@ export const Line = tw.div`pb-8 mb-2 border-t-2 border-gray-300`;
 export const FooterContents = styled.div(() => [
   tw`
     flex flex-col justify-between
-    lg:(flex-row)  
+    lg:(flex-row) 
+    dark:(text-gray-400) 
   `,
 
   css`
@@ -18,10 +19,10 @@ export const FooterContents = styled.div(() => [
 
       a {
         ${tw`
-        transition-colors 
-        hover:text-sky-500
-        focus:(text-sky-500 outline-none) 
-        focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)
+          transition-colors 
+          hover:text-sky-500
+          focus:(text-sky-500 outline-none) 
+          focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)
         `}
       }
     }

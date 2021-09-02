@@ -17,11 +17,19 @@ export const Container = styled.div(() => [
       }
 
       h2 {
-        ${tw`font-bold text-gray-700 mt-5 mb-3 text-3xl lg:(text-5xl)`}
+        ${tw`
+          font-bold text-gray-700 mt-5 mb-3 text-3xl 
+          lg:(text-5xl)
+          dark:(text-sky-400)  
+        `}
       }
 
       h3 {
-        ${tw`font-normal text-gray-500 mt-0.5 text-xl lg:(text-4xl)`}
+        ${tw`
+            font-normal text-gray-500 mt-0.5 text-xl 
+            lg:(text-4xl)
+            dark:(text-gray-300)
+          `}
 
         & > span {
           ${tw`text-sky-500`}
@@ -32,7 +40,11 @@ export const Container = styled.div(() => [
         ${tw`mt-12 text-gray-400 leading-7 `}
 
         p {
-          ${tw`my-2 tracking-wide lg:(text-lg)`}
+          ${tw`
+            my-2 tracking-wide 
+            lg:(text-lg)
+            dark:(text-gray-300)  
+          `}
         }
       }
     }
@@ -47,7 +59,7 @@ export const SkillsSection = styled.div(() => [
       ${tw`font-bold list-disc`}
 
       li {
-        ${tw`my-2 tracking-wider text-sky-600`}
+        ${tw`my-2 tracking-wider text-sky-600 dark:(text-sky-400)`}
       }
     }
   `,

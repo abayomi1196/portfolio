@@ -7,11 +7,16 @@ export const Container = tw.div`
 `;
 
 export const Title = styled.h2(() => [
-  tw`text-gray-600 text-2xl my-5 lg:(text-3xl)`,
+  tw`
+    text-gray-600 text-2xl my-5 
+    lg:(text-3xl)
+    dark:(text-sky-300)
+    `,
 
   css`
     & small {
-      ${tw`inline-block text-sm lowercase px-3 py-1 bg-yellow-500 text-gray-200 rounded-full shadow-md`}
+      ${tw`
+        inline-block text-sm lowercase px-3 py-1 bg-yellow-500 text-gray-200 rounded-full shadow-md`}
     }
   `,
 ]);
@@ -21,11 +26,13 @@ export const ProjectLink = tw.a`
     transition-colors underline
     hover:(text-sky-500)
     focus:(text-sky-500 outline-none) 
-    focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60        outline-none)
+    focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60   outline-none)
+    dark:(text-sky-300 hocus:(text-gray-200))
 `;
 
 export const Description = tw.p`
   mt-5 mb-2 text-gray-500 tracking-wide leading-6
+  dark:(text-gray-300)
 `;
 
 export const StackList = styled.ul(() => [
@@ -36,7 +43,9 @@ export const StackList = styled.ul(() => [
       margin-bottom: 50px;
     }
     & > li {
-      ${tw`shadow-md bg-sky-200 text-gray-500 py-1 px-3 rounded-lg
+      ${tw`
+        shadow-md bg-sky-200 text-gray-500 py-1 px-3 rounded-lg
+        dark:(text-gray-600)
       `}
     }
   `,
@@ -55,17 +64,19 @@ export const ImageWrapper = styled.a(() => [
 export const Details = styled.div(() => [
   css`
     & h3 {
-      ${tw`text-gray-600 text-2xl`}
+      ${tw`text-gray-600 text-2xl dark:(text-sky-300)`}
     }
 
     & p {
-      ${tw`text-gray-500 my-2  tracking-wide leading-6 mb-10`}
+      ${tw`text-gray-500 my-2 tracking-wide leading-6 mb-10
+        dark:(text-gray-300)
+      `}
     }
   `,
 ]);
 
 export const OtherProjects = styled.div(() => [
-  tw`text-gray-500 mt-10 text-lg`,
+  tw`text-gray-500 mt-10 mb-36 text-lg dark:(text-gray-300)`,
   css`
     & {
       a {
@@ -73,7 +84,8 @@ export const OtherProjects = styled.div(() => [
         font-bold text-sky-400 inline-block mx-2 my-1 transition-colors underline
         hover:(text-sky-500)
         focus:(text-sky-500 outline-none) 
-        focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60      outline-none)
+        focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)
+        dark:(text-sky-300 hocus:(text-gray-200))
         `}
       }
     }
