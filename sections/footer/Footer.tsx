@@ -22,6 +22,15 @@ const Footer = () => {
             >
               Twitter
             </a>
+            
+             <a
+              href="https://www.linkedin.com/in/abayomi-ayodele-77a565131/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            
             <a
               href="https://github.com/AbayomiAyodele"
               target="_blank"
