@@ -28,7 +28,7 @@ export const projects: projectType[] = [
       'Project really challenged my knowledge and understanding of Application state and how to handle it, in which cases to implement component-only state and in what cases state should be stored in Redux.',
     otherProjects: [
       { name: 'SwiftBespoke Clothing', link: '/project/swiftbespoke' },
-      { name: 'Netflix Clone', link: '/project/netflix-clone' },
+      { name: 'Propexx Admin Console', link: '/project/propexx' },
     ],
   },
   {
@@ -57,6 +57,31 @@ export const projects: projectType[] = [
     ],
   },
   {
+    title: 'Propexx Admin Console',
+    slug: 'propexx',
+    image:
+      'https://res.cloudinary.com/ayo-clodinary/image/upload/v1629496452/propexx-preview_mxqkww.png',
+    stack: ['React', 'Redux', 'Axios', 'SASS'],
+    url: 'https://admin.propexx.com/',
+    inDevelopment: true,
+    summary:
+      'The Propexx Admin Console is a web application built to help manage and control properties, agents, amd customers all from the viewpoint / vantage point of the Admin. It allows updating property details, activating & deactivating agents, and direct interaction with customers',
+    implementation:
+      'Application was built with React, as the team found it most suitable for a dashboard application. I was in charge of seting up application state (Redux), API services(Axios) & general application functionality i.e (Routing, Authentication, etc.)',
+    lessonsLearned:
+      'Building this has contributed to improving my knowledge and understanding of how application state using Redux is managed, also project architecture and folder structure.',
+    otherProjects: [
+      {
+        name: 'SwiftBespoke Clothing',
+        link: '/project/swiftbespoke',
+      },
+      {
+        name: 'Netflix Clone',
+        link: '/project/netflix-clone',
+      },
+    ],
+  },
+  {
     title: 'Netflix Clone',
     slug: 'netflix-clone',
     image:
@@ -71,7 +96,7 @@ export const projects: projectType[] = [
     lessonsLearned:
       'Proper project architecture and file naming patterns for a medium sized react project that would improve efficiency, readability, & scalability',
     otherProjects: [
-      { name: 'SwiftBespoke Clothing', link: '/project/swiftbespoke' },
+      { name: 'Propexx Admin Console', link: '/project/propexx' },
       {
         name: 'TEF Restaurant',
         link: '/project/tef-restaurant',
