@@ -2,16 +2,15 @@
 
 import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
+import useDarkMode from 'utils/useDarkMode';
 import {
+  Bull,
   Container,
-  Wrapper,
   NameLink,
   SocialLinksWrapper,
-  Bull,
   ThemeWrapper,
+  Wrapper,
 } from './Navigation.styled';
-
-import useDarkMode from 'utils/useDarkMode';
 
 const Navigation = () => {
   const [colorTheme, setTheme] = useDarkMode();
@@ -31,7 +30,7 @@ const Navigation = () => {
             smooth={true}
             duration={500}
           >
-            <a>About</a>
+            <Link href="/">About</Link>
           </ScrollLink>
           <Bull>&bull;</Bull>
           <ScrollLink
@@ -41,7 +40,7 @@ const Navigation = () => {
             smooth={true}
             duration={500}
           >
-            <a>Projects</a>
+            <Link href="/#projects">Projects</Link>
           </ScrollLink>
 
           <ThemeWrapper>
