@@ -4,7 +4,7 @@ import { Wrapper, Container } from './Contact.styled';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 
-import horseImg from 'public/horse.jpg';
+import laptopImg from 'public/laptop.jpg';
 
 const Contact = () => (
   <Wrapper>
@@ -26,7 +26,7 @@ const Contact = () => (
       <div>
         <Fade left delay={500}>
           <Image
-            src={horseImg}
+            src={laptopImg}
             alt="Profile"
             placeholder="blur"
             className="rounded-full"

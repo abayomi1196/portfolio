@@ -27,7 +27,7 @@ const SEO = () => (
     />
     <meta property="og-locale" content="en-GB" />
     <meta property="og-type" content="website" />
-    <meta property="og:image" content="/horse.jpg" key="ogimage" />
+    <meta property="og:image" content="/laptop.jpg" key="ogimage" />
     <meta property="og:site_name" content="Abayomi Ayodele" key="ogsitename" />
     {/* End of Open Graph SEO */}
 
@@ -48,13 +48,10 @@ const SEO = () => (
 
     <meta
       name="twitter:image"
-      content="https://res.cloudinary.com/ayo-clodinary/image/upload/v1629665194/78866624_y7yqv0.jpg"
+      content="https://res.cloudinary.com/ayo-clodinary/image/upload/v1631227084/laptop4_adqffl.jpg"
     />
 
-    <meta
-      name="twitter:image:alt"
-      content="Bojack Horseman. I love that show."
-    />
+    <meta name="twitter:image:alt" content="Coding Desk Setup" />
     {/* End of Twitter SEO */}
 
     <link rel="icon" href="/icon.png" />

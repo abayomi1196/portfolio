@@ -67,7 +67,7 @@ export const projects: projectType[] = [
     summary:
       'The Propexx Admin Console is a web application built to help manage and control properties, agents, amd customers all from the viewpoint of the Admin. It allows updating property details, activating & deactivating agents, and direct interaction with customers',
     implementation:
-      'Application was built with React, as the team found it most suitable for a dashboard application. I was in charge of seting up application state (Redux), API services(Axios) & general application functionality i.e (Routing, Authentication, etc.)',
+      'Application was built with React, as the team found it most suitable for a dashboard application. I was in charge of setting up application state (Redux), API services(Axios) & general application functionality i.e (Routing, Authentication, etc.)',
     lessonsLearned:
       'Building this has contributed to improving my knowledge and understanding of how application state using Redux is managed, also project architecture and folder structure.',
     otherProjects: [
