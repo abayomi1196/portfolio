@@ -1,12 +1,11 @@
-import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { GetStaticProps, GetStaticPaths } from 'next';
 
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
-import { projects } from 'sections/projects/projectData';
+import { projects, projectType } from 'sections/projects/projectData';
 
 import { Layout, Contact } from 'sections';
 
@@ -22,31 +21,28 @@ import {
   OtherProjects,
 } from 'styles/singleProject.styled';
 
-const SingleProject: NextPage = () => {
-  const router = useRouter();
-  const { singleProject } = router.query;
+type SingleProjectProps = {
+  projectDetails: projectType;
+};
 
-  const projectDetails = projects.find(
-    (project) => project.slug === singleProject
-  );
-
+const SingleProject = ({ projectDetails }: SingleProjectProps) => {
   return (
     <Layout>
       <Wrapper>
         <Container>
           <Fade bottom>
             <Title>
-              {projectDetails?.title}{' '}
-              {projectDetails?.inDevelopment && <small>In Development</small>}{' '}
+              {projectDetails.title}{' '}
+              {projectDetails.inDevelopment && <small>In Development</small>}{' '}
             </Title>
           </Fade>
 
           <Fade bottom={500}>
-            <Description>{projectDetails?.summary}</Description>
+            <Description>{projectDetails.summary}</Description>
             <p>
               <span>
                 <ProjectLink
-                  href={projectDetails?.url}
+                  href={projectDetails.url}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -54,7 +50,7 @@ const SingleProject: NextPage = () => {
                 </ProjectLink>
               </span>
 
-              {projectDetails?.github && (
+              {projectDetails.github && (
                 <span>
                   <ProjectLink
                     href={projectDetails.github}
@@ -68,25 +64,23 @@ const SingleProject: NextPage = () => {
             </p>
           </Fade>
 
-          {projectDetails ? (
-            <ImageWrapper
-              href={projectDetails.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image
-                src={projectDetails.image}
-                alt={projectDetails.title}
-                width={1920}
-                height={768}
-                objectFit="cover"
-              />
-            </ImageWrapper>
-          ) : null}
+          <ImageWrapper
+            href={projectDetails.url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src={projectDetails.image}
+              alt={projectDetails.title}
+              width={1920}
+              height={768}
+              objectFit="cover"
+            />
+          </ImageWrapper>
 
           <Fade bottom delay={800}>
             <StackList>
-              {projectDetails?.stack.map((tech, id) => (
+              {projectDetails.stack.map((tech, id) => (
                 <li key={id}>{tech}</li>
               ))}
             </StackList>
@@ -94,17 +88,17 @@ const SingleProject: NextPage = () => {
 
           <Details>
             <h3>Implementation</h3>
-            <p>{projectDetails?.implementation}</p>
+            <p>{projectDetails.implementation}</p>
           </Details>
 
           <Details>
             <h3>Lessons Learned</h3>
-            <p>{projectDetails?.lessonsLearned}</p>
+            <p>{projectDetails.lessonsLearned}</p>
           </Details>
 
           <OtherProjects>
             I also built:{' '}
-            {projectDetails?.otherProjects.map((item) => (
+            {projectDetails.otherProjects.map((item) => (
               <Link href={item.link} key={item.link}>
                 {item.name}
               </Link>
@@ -116,6 +110,26 @@ const SingleProject: NextPage = () => {
       </Wrapper>
     </Layout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  // @ts-ignore
+  const { singleProject } = context.params;
+
+  const projectDetails = projects.find(
+    (project) => project.slug === singleProject
+  );
+
+  return {
+    props: { projectDetails },
+  };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = projects.map((project) => ({
+    params: { singleProject: project.slug },
+  }));
+  return { paths, fallback: false };
 };
 
 export default SingleProject;
