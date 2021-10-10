@@ -21,30 +21,37 @@ export const projects: projectType[] = [
     stack: ['React', 'Redux', 'Axios', 'Styled Components'],
     url: 'https://food.tef.ng',
     summary:
-      'Food ordering application built for Tamuno Exalted Fingers (TEF) Restaurant. I was tasked primarily with connecting to the backend and implementing general application functionality.',
+      'Food ordering application built for Tamuno Exalted Fingers (TEF) Restaurant. Users can view available choices, add to cart and then make orders either anonymously or as logged in users. I was tasked primarily with connecting to the backend and implementing general application functionality.',
     implementation:
-      'Application was built with React, Connection to the backend & setting up API services was done with Axios, Application state was handled with Redux',
+      'Application was built with React, Styled with vanilla CSS, Connection to the backend & setting up of API services was done with Axios, Application state was handled with Redux',
     lessonsLearned:
-      'Project really challenged my knowledge and understanding of Application state and how to handle it, in which cases to implement component-only state and in what cases state should be stored in Redux.',
+      'Project really challenged my knowledge and understanding of Application state and how to handle it, in which cases to implement component-only state and in what cases state should be stored in Redux. Also made use of some external libraries, i.e Formik.',
     otherProjects: [
-      { name: 'SwiftBespoke Clothing', link: '/project/swiftbespoke' },
-      { name: 'Propexx Admin Console', link: '/project/propexx' },
+      { name: 'Crypto News App', link: '/project/crypto-app' },
+      { name: 'My Portfolio Website', link: '/project/portfolio' },
     ],
   },
   {
-    title: 'SwiftBespoke Clothing',
-    slug: 'swiftbespoke',
+    title: 'Crypto News App',
+    slug: 'crypto-app',
     image:
-      'https://res.cloudinary.com/ayo-clodinary/image/upload/v1630522527/Screenshot_from_2021-09-01_19-53-21_gre16k.png',
-    stack: ['NextJS', 'Redux-Toolkit', 'Axios', 'CSS Modules'],
-    url: 'https://swiftbespoke-react.netlify.app/',
-    inDevelopment: true,
+      'https://res.cloudinary.com/ayo-clodinary/image/upload/v1633901658/crypto-app_p6ow9j.png',
+    stack: [
+      'ReactJS',
+      'Typescript',
+      'Redux-Toolkit',
+      'Redux-Toolkit-Query',
+      'AntDesign',
+    ],
+    url: 'https://ayos-crypto-app.netlify.app/',
+    github: 'https://github.com/AbayomiAyodele/crypto-app',
+    inDevelopment: false,
     summary:
-      'SwiftBespoke is an Online Made-To-Order Fashion E-Commerce Store. Designed to provide pocket-friendly, premium Custom tailoring services to both genders. ',
+      'Web Application I built showing current crypto stats i.e Top 10 Cryptocurrencies by market cap, current world news around cryptocurrency, exchanges etc. Was my first introduction to RTK Query and all the goodies that come with it.',
     implementation:
-      'Application was set up using NextJS, Redux-Toolkit, & Axios. I was primarily tasked with connecting to the backend server and implementing general app functionality',
+      'Application was set up using Typescript, Redux-Toolkit, & Redux-Toolkit-Query. I was interested primarily in building an application with the new RTK Query library. I also used Ant Design for the first time with this project, and it was great. The variety of styling options i have now for my React projects make me feel good. :)',
     lessonsLearned:
-      'State Persistence between page refresh using Redux Persist, Server Side Rendering and all the complications that come with that with regards persisting the state, Static Site Generation for single product',
+      'Using available libraries and Open source packages to simplify a lot of the development process e,g the caching offered by the RTK Query library would have been very difficult to setup from scratch but was really simplified, also used Typescript and had to type all my API responses. This really helped with the auto-complete and type-checking preventing a lot of irritating execution time bugs.',
     otherProjects: [
       {
         name: 'TEF Restaurant',
@@ -57,23 +64,30 @@ export const projects: projectType[] = [
     ],
   },
   {
-    title: 'Propexx Admin Console',
-    slug: 'propexx',
+    title: 'My Portfolio Website',
+    slug: 'portfolio',
     image:
-      'https://res.cloudinary.com/ayo-clodinary/image/upload/v1629496452/propexx-preview_mxqkww.png',
-    stack: ['React', 'Redux', 'Axios', 'SASS'],
-    url: 'https://admin.propexx.com/',
-    inDevelopment: true,
+      'https://res.cloudinary.com/ayo-clodinary/image/upload/v1633903678/portfolio_d6ejnd.png',
+    stack: [
+      'NextJS',
+      'Typescript',
+      'TailwindCSS',
+      'Twin.Macro',
+      'Styled Components',
+    ],
+    url: 'https://portfolio-ayodele.vercel.app/',
+    github: 'https://github.com/AbayomiAyodele/portfolio',
+    inDevelopment: false,
     summary:
-      'The Propexx Admin Console is a web application built to help manage and control properties, agents, and customers all from the viewpoint of the Admin. It allows updating property details, activating & deactivating agents, and direct interaction with customers',
+      'My portfolio website, the very same you are looking at. Built and structured deliberately to allow for easy improvement on layout and content.',
     implementation:
-      'Application was built with React, as the team found it most suitable for a dashboard application. I was in charge of setting up application state (Redux), API services(Axios) & general application functionality i.e (Routing, Authentication, etc.)',
+      'Built with Typescript, NextJS, & Twin.Macro, Utilized some packages that were relatively new to me before this project, i.e Typescript & Twin.Macro, but was able ultimately to use and improve on them.',
     lessonsLearned:
-      'Building this has contributed to improving my knowledge and understanding of how application state using Redux is managed, also project architecture and folder structure.',
+      "Decided to use Typescript for the project to help with type-checking and take advantage of VS Code's autocomplete, also managed a hybrid of TailwindCSS and Styled Components using the Twin.Macro package, beyond the setup, this was an overall smooth experience as i was able to maintain a rather clean JSX utilizing what i love most about the CSS-IN-JS approach with the evident benefit to the Utility classes styling pattern.",
     otherProjects: [
       {
-        name: 'SwiftBespoke Clothing',
-        link: '/project/swiftbespoke',
+        name: 'Crypto News App',
+        link: '/project/crypto-app',
       },
       {
         name: 'Netflix Clone',
@@ -96,7 +110,7 @@ export const projects: projectType[] = [
     lessonsLearned:
       'Proper project architecture and file naming patterns for a medium sized react project that would improve efficiency, readability, & scalability',
     otherProjects: [
-      { name: 'Propexx Admin Console', link: '/project/propexx' },
+      { name: 'My Portfolio Website', link: '/project/portfolio' },
       {
         name: 'TEF Restaurant',
         link: '/project/tef-restaurant',
