@@ -62,7 +62,7 @@ export const SkillsSection = styled.div(() => [
 
   css`
     & ul {
-      ${tw`font-bold list-disc`}
+      ${tw`list-disc`}
 
       li {
         ${tw`my-2 tracking-wider text-sky-300 dark:(text-sky-400)`}
