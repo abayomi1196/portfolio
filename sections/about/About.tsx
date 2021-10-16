@@ -48,7 +48,7 @@ const About = () => {
                     </ul>
                     <ul>
                       <li>Typescript</li>
-                      <li>React / Redux / Redux-Toolkit</li>
+                      <li>ReactJS / Redux / Redux-Toolkit</li>
                       <li>NextJS</li>
                     </ul>
                     <ul>

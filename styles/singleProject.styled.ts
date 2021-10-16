@@ -8,9 +8,9 @@ export const Container = tw.div`
 
 export const Title = styled.h2(() => [
   tw`
-    text-gray-600 text-2xl my-5 
+    text-gray-300 text-2xl my-5 
     lg:(text-3xl)
-    dark:(text-sky-300)
+    dark:(text-gray-300)
     `,
 
   css`
@@ -21,27 +21,40 @@ export const Title = styled.h2(() => [
   `,
 ]);
 
-export const ProjectLink = tw.a`
-    text-sky-700 my-2 inline-block mx-3
-    transition-colors underline
-    hover:(text-sky-500)
-    focus:(text-sky-500 outline-none) 
-    focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60   outline-none)
-    dark:(text-sky-300 hocus:(text-gray-200))
-`;
+export const ProjectLinksWrapper = styled.p(() => [
+  css`
+    & > span:not(:first-of-type) {
+      margin-left: 20px;
+    }
+  `,
+]);
 
-export const Description = tw.p`
-  mt-5 mb-2 text-gray-500 tracking-wide leading-6
-  dark:(text-gray-300)
-`;
+export const ProjectLink = styled.a(() => [
+  tw`
+  text-sky-400 my-2 inline-block mb-12
+  transition-colors underline
+  hover:(text-sky-500)
+  focus:(text-sky-500 outline-none) 
+  focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60   outline-none)
+  dark:(text-sky-300 hocus:(text-gray-200))
+  `,
+]);
+
+export const Description = styled.p(() => [
+  tw`
+  my-5 text-gray-400 tracking-wider leading-7
+  dark:(text-gray-400)
+  `,
+]);
 
 export const StackList = styled.ul(() => [
-  tw`list-none my-3 flex flex-wrap gap-2`,
+  tw`list-none mt-3 mb-12 flex flex-wrap gap-5`,
 
   css`
     & {
       margin-bottom: 50px;
     }
+
     & > li {
       ${tw`
         shadow-md bg-sky-200 text-gray-500 py-1 px-3 rounded-lg
@@ -64,24 +77,24 @@ export const ImageWrapper = styled.a(() => [
 export const Details = styled.div(() => [
   css`
     & h3 {
-      ${tw`text-gray-600 text-2xl dark:(text-sky-300)`}
+      ${tw`text-gray-300 mb-4 text-2xl dark:(text-gray-300)`}
     }
 
     & p {
-      ${tw`text-gray-500 my-2 tracking-wide leading-6 mb-10
-        dark:(text-gray-300)
+      ${tw`text-gray-400 my-2 tracking-wide leading-6 mb-10
+        dark:(text-gray-400)
       `}
     }
   `,
 ]);
 
 export const OtherProjects = styled.div(() => [
-  tw`text-gray-500 mt-10 mb-36 text-lg dark:(text-gray-300)`,
+  tw`text-gray-300 my-24 text-lg dark:(text-gray-300)`,
   css`
     & {
       a {
         ${tw`
-        font-bold text-sky-400 inline-block mx-2 my-1 transition-colors underline
+        text-sky-400 inline-block mx-2 my-1 transition-colors underline
         hover:(text-sky-500)
         focus:(text-sky-500 outline-none) 
         focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)

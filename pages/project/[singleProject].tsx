@@ -19,6 +19,7 @@ import {
   ImageWrapper,
   Details,
   OtherProjects,
+  ProjectLinksWrapper,
 } from 'styles/singleProject.styled';
 
 type SingleProjectProps = {
@@ -39,7 +40,7 @@ const SingleProject = ({ projectDetails }: SingleProjectProps) => {
 
           <Fade bottom={500}>
             <Description>{projectDetails.summary}</Description>
-            <p>
+            <ProjectLinksWrapper>
               <span>
                 <ProjectLink
                   href={projectDetails.url}
@@ -61,7 +62,7 @@ const SingleProject = ({ projectDetails }: SingleProjectProps) => {
                   </ProjectLink>
                 </span>
               )}
-            </p>
+            </ProjectLinksWrapper>
           </Fade>
 
           <ImageWrapper
@@ -78,13 +79,11 @@ const SingleProject = ({ projectDetails }: SingleProjectProps) => {
             />
           </ImageWrapper>
 
-          <Fade bottom delay={800}>
-            <StackList>
-              {projectDetails.stack.map((tech, id) => (
-                <li key={id}>{tech}</li>
-              ))}
-            </StackList>
-          </Fade>
+          <StackList>
+            {projectDetails.stack.map((tech, id) => (
+              <li key={id}>{tech}</li>
+            ))}
+          </StackList>
 
           <Details>
             <h3>Implementation</h3>
@@ -104,9 +103,8 @@ const SingleProject = ({ projectDetails }: SingleProjectProps) => {
               </Link>
             ))}
           </OtherProjects>
-
-          <Contact />
         </Container>
+        <Contact />
       </Wrapper>
     </Layout>
   );

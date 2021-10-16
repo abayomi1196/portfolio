@@ -18,7 +18,7 @@ const Projects = () => {
         <Container>
           <Title>Stuff I&apos;ve Worked On.</Title>
           <SubTitle>
-            Whether in my free time, or freelancing, I like to keep busy.{' '}
+            Here are some recent projects I&apos;ve worked on.{' '}
           </SubTitle>
 
           <ProjectsContainer>

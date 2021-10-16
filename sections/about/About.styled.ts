@@ -41,12 +41,16 @@ export const Container = styled.div(() => [
 
         p {
           line-height: 30px;
-          word-spacing: 1.2px;
+
           ${tw`
             my-2 tracking-wide
             lg:(text-lg)
             dark:(text-gray-400)  
           `}
+
+          &:last-of-type {
+            margin-bottom: 20px;
+          }
         }
       }
     }
