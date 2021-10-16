@@ -7,7 +7,7 @@ module.exports = {
     // extending default tailwind classes with custom
     extend: {
       fontFamily: {
-        sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
+        serif: ['Ubuntu', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         sky: colors.sky,
