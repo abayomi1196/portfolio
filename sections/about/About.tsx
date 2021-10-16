@@ -15,12 +15,12 @@ const About = () => {
                 <span role="img" aria-label="waving emoji">
                   👋
                 </span>{' '}
-                Hello world.
+                Hi there.
               </h1>
             </Fade>
 
             <Fade bottom>
-              <h2>Abayomi Ayodele.</h2>
+              <h2>I&apos;m Ayo.</h2>
               <h3>
                 Front End <span>Developer</span> based in Abuja, Nigeria.
               </h3>
@@ -29,33 +29,32 @@ const About = () => {
             <div>
               <Fade delay={500}>
                 <p>
-                  I am a software developer with growing expertise in modern web
-                  development and design. I&apos;ve been particularly privileged
-                  early on in my career to collaborate on both small and large
-                  teams, impacting real world projects and learning immensely
-                  from the experience.
+                  A software engineer who enjoys solving real-world problems
+                  with clean, maintainable code. Always looking to learn new
+                  skills and improve on existing knowledge, hoping to contribute
+                  to making the world a better place.
                 </p>
 
                 <p>
                   By dedicating a lot of my free time to learning and practice,
-                  collaborating on freelance projects & professional experience,
-                  i&apos;ve been able to gain a solid understanding of the
-                  following technologies:
+                  collaborating on freelance projects & growing professional
+                  experience, i&apos;ve been able to gain a solid understanding
+                  of the following technologies:
                   <SkillsSection>
                     <ul>
-                      <li>HTML5+ / CSS3</li>
+                      <li>HTML5+</li>
+                      <li>CSS3 / SASS</li>
                       <li>JavaScript ES6+</li>
-                      <li>SASS</li>
-                    </ul>
-                    <ul>
-                      <li>React / Redux</li>
-                      <li>Styled Components</li>
-                      <li>TailwindCSS</li>
                     </ul>
                     <ul>
                       <li>Typescript</li>
+                      <li>React / Redux / Redux-Toolkit</li>
                       <li>NextJS</li>
+                    </ul>
+                    <ul>
                       <li>Git and Github</li>
+                      <li>TailwindCSS</li>
+                      <li>Styled Components</li>
                     </ul>
                   </SkillsSection>
                 </p>

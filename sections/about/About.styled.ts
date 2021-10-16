@@ -18,8 +18,8 @@ export const Container = styled.div(() => [
 
       h2 {
         ${tw`
-          font-bold text-sky-300 mt-8 mb-4 text-3xl 
-          lg:(text-5xl)
+          text-sky-300 mt-10 mb-4 text-3xl 
+          lg:(text-6xl)
           dark:(text-sky-400)  
         `}
       }
