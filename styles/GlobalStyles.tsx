@@ -7,7 +7,13 @@ const CustomStyles = createGlobalStyle`
     /* give title some breathing room when we scroll towards them */
     scroll-padding-top: 120px;
   }
-  
+
+  * {
+    -webkit-transition: background-color 500ms ease-in-out;
+    -ms-transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
+  }
+
   body {
     padding: 20px;
     display: flex;  
