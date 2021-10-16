@@ -18,7 +18,7 @@ export const Container = styled.div(() => [
 
       h2 {
         ${tw`
-          font-bold text-sky-300 mt-5 mb-3 text-3xl 
+          font-bold text-sky-300 mt-8 mb-4 text-3xl 
           lg:(text-5xl)
           dark:(text-sky-400)  
         `}
@@ -40,6 +40,8 @@ export const Container = styled.div(() => [
         ${tw`mt-12 text-gray-300 leading-7 `}
 
         p {
+          line-height: 30px;
+          word-spacing: 1.2px;
           ${tw`
             my-2 tracking-wide
             lg:(text-lg)
