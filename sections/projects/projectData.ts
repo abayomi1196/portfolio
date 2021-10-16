@@ -28,7 +28,7 @@ export const projects: projectType[] = [
       'Project really challenged my knowledge and understanding of Application state and how to handle it, in which cases to implement component-only state and in what cases state should be stored in Redux. Also made use of some external libraries, i.e Formik.',
     otherProjects: [
       { name: 'Crypto News App', link: '/project/crypto-app' },
-      { name: 'My Portfolio Website', link: '/project/portfolio' },
+      { name: 'Netflix Clone', link: '/project/netflix-clone' },
     ],
   },
   {
@@ -63,38 +63,7 @@ export const projects: projectType[] = [
       },
     ],
   },
-  {
-    title: 'My Portfolio Website',
-    slug: 'portfolio',
-    image:
-      'https://res.cloudinary.com/ayo-clodinary/image/upload/v1633903678/portfolio_d6ejnd.png',
-    stack: [
-      'NextJS',
-      'Typescript',
-      'TailwindCSS',
-      'Twin.Macro',
-      'Styled Components',
-    ],
-    url: 'https://portfolio-ayodele.vercel.app/',
-    github: 'https://github.com/AbayomiAyodele/portfolio',
-    inDevelopment: false,
-    summary:
-      'My portfolio website, the very same you are looking at. Built and structured deliberately to allow for easy improvement on layout and content.',
-    implementation:
-      'Built with Typescript, NextJS, & Twin.Macro, Utilized some packages that were relatively new to me before this project, i.e Typescript & Twin.Macro, but was able ultimately to use and improve on them.',
-    lessonsLearned:
-      "Decided to use Typescript for the project to help with type-checking and take advantage of VS Code's autocomplete, also managed a hybrid of TailwindCSS and Styled Components using the Twin.Macro package, beyond the setup, this was an overall smooth experience as i was able to maintain a rather clean JSX utilizing what i love most about the CSS-IN-JS approach with the evident benefit to the Utility classes styling pattern.",
-    otherProjects: [
-      {
-        name: 'Crypto News App',
-        link: '/project/crypto-app',
-      },
-      {
-        name: 'Netflix Clone',
-        link: '/project/netflix-clone',
-      },
-    ],
-  },
+
   {
     title: 'Netflix Clone',
     slug: 'netflix-clone',
@@ -110,7 +79,7 @@ export const projects: projectType[] = [
     lessonsLearned:
       'Proper project architecture and file naming patterns for a medium sized react project that would improve efficiency, readability, & scalability',
     otherProjects: [
-      { name: 'My Portfolio Website', link: '/project/portfolio' },
+      { name: 'Crypto News App', link: '/project/crypto-app' },
       {
         name: 'TEF Restaurant',
         link: '/project/tef-restaurant',
