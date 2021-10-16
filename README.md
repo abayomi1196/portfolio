@@ -2,11 +2,12 @@ This page was built with [Next.js](https://nextjs.org/), [Typescript](https://ww
 
 # [Portfolio Site](https://portfolio-ayodele.vercel.app/)
 
-![](https://res.cloudinary.com/ayo-clodinary/image/upload/v1630496572/Screenshot_from_2021-09-01_12-38-07_ip6uka.png)
+![](https://res.cloudinary.com/ayo-clodinary/image/upload/v1634374620/portfolio_nhw1fr.png)
 
 Build setup:
 
 ```bash
+yarn
 yarn dev
 ```
 
