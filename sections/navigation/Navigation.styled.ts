@@ -12,7 +12,7 @@ export const Container = styled.div(() => [
   tw`
     px-4 mx-auto 
     md:(flex items-center justify-between) 
-    lg:(max-w-4xl)
+    lg:(max-w-7xl)
   `,
 ]);
 

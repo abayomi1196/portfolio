@@ -2,7 +2,7 @@ import tw, { styled, css } from 'twin.macro';
 
 export const FooterWrapper = tw.div`container mt-24 pb-16`;
 
-export const Container = tw.div`max-w-4xl px-4 mx-auto text-gray-400`;
+export const Container = tw.div`max-w-7xl px-4 mx-auto text-gray-400`;
 
 export const Line = tw.div`pb-8 mb-2 border-t-2 border-gray-300`;
 

@@ -27,7 +27,7 @@ const About = () => {
             </Fade>
 
             <div>
-              <Fade bottom delay={500}>
+              <Fade delay={500}>
                 <p>
                   I am a software developer with growing expertise in modern web
                   development and design. I&apos;ve been particularly privileged
