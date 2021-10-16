@@ -26,14 +26,14 @@ export const ImageWrapper = styled.div(() => [
   `,
 ]);
 
-export const Title = tw.h2`text-lg font-bold mb-3 text-gray-500 transition-all
-group-hover:(text-gray-600)
-dark:(text-sky-300 group-hover:(text-sky-400))
+export const Title = tw.h2`text-lg font-bold mb-3 text-gray-400 transition-all
+group-hover:(text-gray-300)
+dark:(text-gray-500 group-hover:(text-sky-200))
 `;
 
 export const Description = tw.p`text-gray-400 line-clamp-2 my-3 transition-all
-group-hover:(text-gray-500)
-dark:(group-hover:(text-gray-300))`;
+group-hover:(text-gray-400)
+dark:(group-hover:(text-gray-400))`;
 
 export const MoreLink = tw.p`
   mt-5 text-gray-400

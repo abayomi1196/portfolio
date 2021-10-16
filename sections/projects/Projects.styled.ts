@@ -4,14 +4,14 @@ export const Wrapper = tw.div`container px-4 my-20`;
 
 export const Container = tw.div`max-w-4xl mx-auto`;
 
-export const Title = tw.h3`text-2xl font-bold text-gray-700 
+export const Title = tw.h3`text-2xl font-bold text-sky-200 
 lg:(text-3xl)
 dark:(text-sky-100)
 `;
 
-export const SubTitle = tw.h4`mt-2 text-base text-gray-500
+export const SubTitle = tw.h4`mt-2 text-base text-gray-400
 lg:(text-xl)
-dark:(text-sky-300)
+dark:(text-gray-400)
 `;
 
 export const ProjectsContainer = styled.div(() => [

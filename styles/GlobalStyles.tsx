@@ -10,9 +10,9 @@ const CustomStyles = createGlobalStyle`
   
   body {
     padding: 20px;
-    display: flex;
+    display: flex;  
     justify-content: center;
-    ${tw`dark:bg-gray-600`}
+    ${tw`bg-gray-700 dark:bg-gray-900`}
   }
 `;
 

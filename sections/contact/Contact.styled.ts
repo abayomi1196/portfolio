@@ -9,9 +9,9 @@ export const Container = styled.div(() => [
     & > div:first-of-type {
       > h3 {
         ${tw`
-          text-2xl font-bold text-gray-700 
+          text-2xl text-sky-200 
           lg:(text-3xl)
-          dark:(text-sky-100)
+          dark:(text-blue-200)
           `}
       }
 
@@ -19,18 +19,18 @@ export const Container = styled.div(() => [
         ${tw`
           mt-3 text-base text-gray-400
           lg:(text-lg) 
-          dark:(text-gray-300)
+          dark:(text-gray-500)
         `}
 
         & > strong {
-          ${tw`text-sky-500`}
+          ${tw`text-sky-400`}
         }
       }
 
       a {
         ${tw`
           mt-5 text-sky-500 inline-block
-          hocus:(text-sky-800 underline) 
+          hocus:(text-sky-300 underline) 
           dark:(hocus:(text-sky-100))
         `}
       }
