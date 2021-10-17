@@ -8,8 +8,8 @@ export const Container = tw.div`
 
 export const Title = styled.h2(() => [
   tw`
-    text-gray-300 text-2xl my-5 
-    lg:(text-3xl)
+    text-gray-200 text-2xl my-5 
+    lg:(text-4xl)
     dark:(text-gray-300)
     `,
 

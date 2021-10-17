@@ -45,7 +45,7 @@ export const Container = styled.div(() => [
           ${tw`
             my-2 tracking-wide
             lg:(text-lg)
-            dark:(text-gray-400)  
+            dark:(text-gray-500)  
           `}
 
           &:last-of-type {
