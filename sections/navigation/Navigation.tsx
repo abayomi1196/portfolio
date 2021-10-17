@@ -40,7 +40,7 @@ const Navigation = () => {
             smooth={true}
             duration={500}
           >
-            <Link href="/#projects">Projects</Link>
+            <Link href="/">Projects</Link>
           </ScrollLink>
 
           <ThemeWrapper>
