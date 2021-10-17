@@ -27,7 +27,7 @@ export const projects: projectType[] = [
     lessonsLearned:
       'Project really challenged my knowledge and understanding of Application state and how to handle it, in which cases to implement component-only state and in what cases state should be stored in Redux. Also made use of some external libraries, i.e Formik.',
     otherProjects: [
-      { name: 'Crypto News App', link: '/project/crypto-app' },
+      { name: 'Beach Resort Web App', link: '/project/resort' },
       { name: 'Netflix Clone', link: '/project/netflix-clone' },
     ],
   },
@@ -65,6 +65,29 @@ export const projects: projectType[] = [
   },
 
   {
+    title: 'Beach Resort Web App',
+    slug: 'resort',
+    image:
+      'https://res.cloudinary.com/ayo-clodinary/image/upload/v1634488700/resort_yzmeio.png',
+    stack: ['React', 'Styled Components', 'React Router', 'Context API'],
+    url: 'https://ayosbeachresort.netlify.app/',
+    github: 'https://github.com/AbayomiAyodele/beach-resort',
+    summary:
+      'Landing Page for a hypothetical beach resort in Sandals, Jamaica 😉. Showing all rooms available and providing additional information for a selected room.',
+    implementation:
+      'Built with ReactJS, Styled using Styled Components, was built using the Context API to manage application-wide state, in-app routing was handled with React Router DOM',
+    lessonsLearned:
+      'Using the React Context API to handle small to medium scale application state as an alternative to Redux, this project also helped solidify my understanding of routing in React applications, and implementing propTypes really helped with project maintainability, consistency and overall structure.',
+    otherProjects: [
+      { name: 'Crypto News App', link: '/project/crypto-app' },
+      {
+        name: 'TEF Restaurant',
+        link: '/project/tef-restaurant',
+      },
+    ],
+  },
+
+  {
     title: 'Netflix Clone',
     slug: 'netflix-clone',
     image:
@@ -79,10 +102,10 @@ export const projects: projectType[] = [
     lessonsLearned:
       'Proper project architecture and file naming patterns for a medium sized react project that would improve efficiency, readability, & scalability',
     otherProjects: [
-      { name: 'Crypto News App', link: '/project/crypto-app' },
+      { name: 'Beach Resort Web App', link: '/project/resort' },
       {
-        name: 'TEF Restaurant',
-        link: '/project/tef-restaurant',
+        name: 'Crypto News App',
+        link: '/project/crypto-app',
       },
     ],
   },
