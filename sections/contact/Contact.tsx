@@ -14,9 +14,10 @@ const Contact = () => (
         <p>
           I am currently looking for a new role as a{' '}
           <strong>Front End Developer</strong>. Please feel free to reach out if
-          you are looking to fill a similar role or just want to gist.
+          you are looking to fill a similar role or just want to argue about
+          basketball.
           <span role="img" aria-label="waving emoji">
-            👋
+            😎
           </span>{' '}
         </p>
 
