@@ -2,8 +2,8 @@ import tw, { styled, css } from 'twin.macro';
 
 export const ProjectLink = styled.a(() => [
   tw`
-    block shadow-sm p-5 transition-all
-    hover:(shadow-md)
+    block shadow-md p-5 transition-all
+    hover:(shadow-lg)
     focus:(outline-none) 
     focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)
     
