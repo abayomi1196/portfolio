@@ -9,8 +9,8 @@ export const Container = styled.div(() => [
     & > div:first-of-type {
       > h3 {
         ${tw`
-          text-2xl text-sky-200 
-          lg:(text-3xl)
+          text-3xl text-sky-200 font-custom
+          lg:(text-4xl)
           dark:(text-blue-200)
           `}
       }

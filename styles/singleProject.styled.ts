@@ -8,8 +8,8 @@ export const Container = tw.div`
 
 export const Title = styled.h2(() => [
   tw`
-    text-gray-200 text-2xl my-5 
-    lg:(text-4xl)
+    text-gray-200 text-2xl my-5 font-custom
+    lg:(text-5xl)
     dark:(text-gray-300)
     `,
 
@@ -77,7 +77,7 @@ export const ImageWrapper = styled.a(() => [
 export const Details = styled.div(() => [
   css`
     & h3 {
-      ${tw`text-gray-300 mb-4 text-2xl dark:(text-gray-300)`}
+      ${tw`text-gray-300 mb-4 text-3xl dark:(text-gray-300)`}
     }
 
     & p {

@@ -12,23 +12,23 @@ export const Container = styled.div(() => [
       h1 {
         ${tw`
           leading-4 text-lg tracking-wider font-light text-gray-400 
-          lg:(text-2xl) 
+          lg:(text-2xl)   
         `}
       }
 
       h2 {
         ${tw`
-          text-sky-300 mt-10 mb-4 text-3xl 
-          lg:(text-6xl)
+          text-sky-300 mt-10 mb-4 text-5xl font-custom
+          lg:(text-8xl)
           dark:(text-sky-400)  
         `}
       }
 
       h3 {
         ${tw`
-            font-normal text-gray-300 mt-0.5 text-xl 
+            font-normal text-gray-300 mt-0.5 text-xl font-custom
             lg:(text-4xl)
-            dark:(text-gray-400)
+            dark:(text-gray-400)  
           `}
 
         & > span {
@@ -37,7 +37,7 @@ export const Container = styled.div(() => [
       }
 
       & > div {
-        ${tw`mt-12 text-gray-300 leading-7 `}
+        ${tw`mt-12 text-gray-400 leading-7 `}
 
         p {
           line-height: 30px;
@@ -65,7 +65,7 @@ export const SkillsSection = styled.div(() => [
       ${tw`list-disc`}
 
       li {
-        ${tw`my-2 tracking-wider text-sky-300 dark:(text-sky-400)`}
+        ${tw`my-2 tracking-wider text-sky-200 dark:(text-gray-300)`}
       }
     }
   `,

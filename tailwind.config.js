@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ['Ubuntu', ...defaultTheme.fontFamily.serif],
+        custom: ['Balsamiq Sans', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         sky: colors.sky,

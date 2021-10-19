@@ -18,7 +18,7 @@ const CustomStyles = createGlobalStyle`
     padding: 20px;
     display: flex;  
     justify-content: center;
-    ${tw`bg-gray-700 dark:bg-gray-900`}
+    ${tw`bg-gray-700 dark:bg-gray-900 font-serif`}
   }
 `;
 

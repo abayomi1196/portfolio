@@ -4,8 +4,8 @@ export const Wrapper = tw.div`container px-4 my-20`;
 
 export const Container = tw.div`max-w-4xl mx-auto`;
 
-export const Title = tw.h3`text-2xl text-sky-200 
-lg:(text-3xl)
+export const Title = tw.h3`text-3xl text-sky-200 font-custom
+lg:(text-5xl)
 dark:(text-blue-200)
 `;
 
