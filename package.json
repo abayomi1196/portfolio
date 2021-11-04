@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
     "@tailwindcss/line-clamp": "^0.2.1",
     "next": "^11.1.2",
     "react": "17.0.2",

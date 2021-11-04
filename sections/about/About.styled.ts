@@ -1,4 +1,4 @@
-import tw, { styled, css } from 'twin.macro';
+import tw, { styled, css } from "twin.macro";
 
 export const Wrapper = tw.div`container px-4 mt-8 `;
 
@@ -62,10 +62,14 @@ export const SkillsSection = styled.div(() => [
 
   css`
     & ul {
-      ${tw`list-disc`}
+      ${tw`list-none flex flex-wrap gap-8 lg:(gap-12)`}
 
       li {
         ${tw`my-2 tracking-wider text-sky-200 dark:(text-gray-300)`}
+
+        &:not(:first-of-type) {
+          /* ${tw`ml-6 lg:(ml-12)`} */
+        }
       }
     }
   `,

@@ -1,20 +1,27 @@
 // @ts-nocheck
 
-import { Wrapper, Container, SkillsSection } from './About.styled';
-import { Element as ScrollElement } from 'react-scroll';
-import Fade from 'react-reveal/Fade';
+import { Wrapper, Container, SkillsSection } from "./About.styled";
+import { Element as ScrollElement } from "react-scroll";
+import Fade from "react-reveal/Fade";
+
+import NuxtLogo from "public/nuxt-js.svg";
+import JavascriptLogo from "public/javascript.svg";
+import TypescriptLogo from "public/typescript.svg";
+import ReactLogo from "public/react-js.svg";
+import NextLogo from "public/next-js.svg";
+import VueLogo from "public/vue.svg";
 
 const About = () => {
   return (
-    <ScrollElement name="about">
+    <ScrollElement name='about'>
       <Wrapper>
         <Container>
           <div>
             <Fade top delay={500}>
               <h1>
-                <span role="img" aria-label="waving emoji">
+                <span role='img' aria-label='waving emoji'>
                   👋
-                </span>{' '}
+                </span>{" "}
                 Hi there.
               </h1>
             </Fade>
@@ -42,19 +49,24 @@ const About = () => {
                   of the following technologies:
                   <SkillsSection>
                     <ul>
-                      <li>HTML5+</li>
-                      <li>CSS3 / SASS</li>
-                      <li>JavaScript ES6+</li>
-                    </ul>
-                    <ul>
-                      <li>Typescript</li>
-                      <li>ReactJS / Redux / Redux-Toolkit</li>
-                      <li>NextJS</li>
-                    </ul>
-                    <ul>
-                      <li>Git and Github</li>
-                      <li>TailwindCSS</li>
-                      <li>Styled Components</li>
+                      <li>
+                        <JavascriptLogo />
+                      </li>
+                      <li>
+                        <TypescriptLogo />
+                      </li>
+                      <li>
+                        <ReactLogo />
+                      </li>
+                      <li>
+                        <NextLogo />
+                      </li>
+                      <li>
+                        <VueLogo />
+                      </li>
+                      <li>
+                        <NuxtLogo />
+                      </li>
                     </ul>
                   </SkillsSection>
                 </p>
