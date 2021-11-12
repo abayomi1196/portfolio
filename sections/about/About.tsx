@@ -4,12 +4,11 @@ import { Wrapper, Container, SkillsSection } from "./About.styled";
 import { Element as ScrollElement } from "react-scroll";
 import Fade from "react-reveal/Fade";
 
-import NuxtLogo from "public/nuxt-js.svg";
 import JavascriptLogo from "public/javascript.svg";
 import TypescriptLogo from "public/typescript.svg";
 import ReactLogo from "public/react-js.svg";
-import NextLogo from "public/next-js.svg";
 import VueLogo from "public/vue.svg";
+import GraphQl from "public/graph-ql.svg";
 
 const About = () => {
   return (
@@ -59,13 +58,10 @@ const About = () => {
                         <ReactLogo />
                       </li>
                       <li>
-                        <NextLogo />
-                      </li>
-                      <li>
                         <VueLogo />
                       </li>
                       <li>
-                        <NuxtLogo />
+                        <GraphQl />
                       </li>
                     </ul>
                   </SkillsSection>
