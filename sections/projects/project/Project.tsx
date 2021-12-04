@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 import {
   Description,
@@ -7,7 +7,7 @@ import {
   ProjectLink,
   Title,
   MoreLink,
-} from './Project.styled';
+} from "./Project.styled";
 
 const Project = ({
   title,
@@ -23,14 +23,14 @@ const Project = ({
   return (
     <div>
       <Link href={`/project/${slug}`} passHref>
-        <ProjectLink className="group">
+        <ProjectLink className='group'>
           <ImageWrapper>
             <Image
               src={image}
               alt={title}
               width={1920}
               height={768}
-              objectFit="cover"
+              objectFit='cover'
             />
           </ImageWrapper>
 
