@@ -12,7 +12,7 @@ export const projects: projectType[] = [
     title: "Anime Webpage",
     image:
       "https://res.cloudinary.com/ayo-clodinary/image/upload/v1638645637/anime-webpage_rw9dat.png",
-    stack: ["NextJS", "Context API", "GraphQL", "CSS Modules"],
+    stack: ["NextJS", "GraphQL"],
     url: "https://anime-webpage.vercel.app/",
     github: "https://github.com/abayomi1196/anime-webpage",
     summary:
@@ -22,7 +22,7 @@ export const projects: projectType[] = [
     title: "OctoList Github Project",
     image:
       "https://res.cloudinary.com/ayo-clodinary/image/upload/v1638645597/octo-list_q7cafi.png",
-    stack: ["React", "Typescript", "Context API", "GraphQL", "CSS Modules"],
+    stack: ["React", "Typescript", "GraphQL"],
     url: "https://octo-list.netlify.app/",
     github: "https://github.com/abayomi1196/github-graphql-app",
     summary:
@@ -33,7 +33,7 @@ export const projects: projectType[] = [
     title: "Movie Search App",
     image:
       "https://res.cloudinary.com/ayo-clodinary/image/upload/v1636019520/movie-app_qr5fbx.png",
-    stack: ["NuxtJS", "SCSS", "Axios", "Heroku"],
+    stack: ["NuxtJS", "SCSS", "Heroku"],
     url: "https://ayos-movie-app.herokuapp.com/",
     github: "https://github.com/abayomi1196/nuxt-movie-app",
     summary:

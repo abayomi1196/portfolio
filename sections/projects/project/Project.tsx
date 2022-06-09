@@ -5,7 +5,8 @@ import {
   ImageWrapper,
   SingleProject,
   Title,
-  MoreLink
+  MoreLink,
+  StackList
 } from "./Project.styled";
 
 type ProjectType = {
@@ -14,6 +15,7 @@ type ProjectType = {
   summary: string;
   githubLink: string;
   externalLink: string;
+  stack: string[];
 };
 
 const Project = ({
@@ -21,7 +23,8 @@ const Project = ({
   image,
   summary,
   githubLink,
-  externalLink
+  externalLink,
+  stack
 }: ProjectType) => {
   return (
     <SingleProject className='group'>
@@ -31,11 +34,19 @@ const Project = ({
           alt={title}
           width={1920}
           height={768}
+          placeholder='blur'
+          blurDataURL={image}
           objectFit='cover'
         />
       </ImageWrapper>
 
       <Title>{title}</Title>
+
+      <StackList>
+        {stack.map((item) => (
+          <span key={item}>{item}</span>
+        ))}
+      </StackList>
 
       <Description>{summary}</Description>
 

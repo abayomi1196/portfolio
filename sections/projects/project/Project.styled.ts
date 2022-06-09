@@ -27,14 +27,25 @@ export const ImageWrapper = styled.div(() => [
   `
 ]);
 
-export const Title = tw.h2`text-lg font-bold mb-3 text-gray-400 transition-all
+export const Title = tw.h2`text-lg font-bold mb-2 text-gray-400 transition-all
 group-hover:(text-gray-300)
-dark:(text-gray-500 group-hover:(text-sky-200))
+dark:(text-gray-300 group-hover:(text-sky-200))
 `;
 
-export const Description = tw.p`text-gray-400 line-clamp-5 my-3 transition-all
-group-hover:(text-gray-400)
-dark:(group-hover:(text-gray-400))`;
+export const StackList = styled.div(() => [
+  tw`flex gap-3.5 mb-5`,
+  css`
+    & {
+      span {
+        ${tw`text-blue-300 opacity-30 text-xs uppercase`}
+      }
+    }
+  `
+]);
+
+export const Description = tw.p`text-gray-400 line-clamp-5 mt-3 mb-1 transition-all
+group-hover:(text-gray-300)
+dark:(group-hover:(text-gray-300))`;
 
 export const MoreLink = styled.p(() => [
   tw`mt-10 text-gray-400 flex gap-3.5 justify-end
@@ -46,7 +57,7 @@ export const MoreLink = styled.p(() => [
         width: 24px;
         height: 24px;
 
-        ${tw`hover:(text-blue-500)`}
+        ${tw`hover:(text-blue-300)`}
       }
     }
   `

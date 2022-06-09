@@ -16,7 +16,7 @@ const Projects = () => {
     <ScrollElement name='projects'>
       <Wrapper>
         <Container>
-          <Title>Stuff I&apos;ve Worked On.</Title>
+          <Title>Featured projects.</Title>
           <SubTitle>
             Here are some recent projects I&apos;ve worked on.{" "}
           </SubTitle>
@@ -30,6 +30,7 @@ const Projects = () => {
                   summary={project.summary}
                   githubLink={project.github}
                   externalLink={project.url}
+                  stack={project.stack}
                 />
               </div>
             ))}
