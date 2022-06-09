@@ -44,7 +44,7 @@ function AnimatedBars() {
       {
         transform: [
           "scaleY(1.0) translateY(0rem)",
-          "scaleY(0.5) translateY(-0.37rem)",
+          "scaleY(0.5) translateY(-0.037rem)",
           "scaleY(1.0) translateY(0rem)"
         ]
       },
@@ -90,7 +90,7 @@ function NowPlaying() {
       <div tw='inline-flex flex-col sm:flex-row w-full max-w-full truncate'>
         {data?.songUrl ? (
           <a
-            tw='capitalize text-gray-800 dark:text-gray-200 font-medium max-w-max truncate
+            tw='capitalize text-gray-300 dark:text-gray-200 font-medium max-w-max truncate
             hover:underline
             '
             href={data.songUrl}
@@ -100,7 +100,7 @@ function NowPlaying() {
             {data.title}
           </a>
         ) : (
-          <p tw='capitalize text-gray-800 dark:text-gray-200 font-medium'>
+          <p tw='capitalize text-gray-400 dark:text-gray-200 font-medium'>
             Not Playing
           </p>
         )}
@@ -108,7 +108,7 @@ function NowPlaying() {
           {" - "}
         </span>
 
-        <p tw='capitalize text-gray-500 dark:text-gray-300 max-w-max truncate'>
+        <p tw='capitalize text-gray-500 dark:text-gray-400 max-w-max truncate'>
           {data?.artist ?? "Spotify"}
         </p>
       </div>
