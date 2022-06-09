@@ -9,6 +9,17 @@ export type projectType = {
 
 export const projects: projectType[] = [
   {
+    title: "Spotify Purify Playlists",
+    image:
+      "https://res.cloudinary.com/ayo-clodinary/image/upload/v1654809163/purify-playlists_cw3hw5.png",
+    stack: ["React", "Node", "Express"],
+    url: "https://playlist-purify.herokuapp.com/",
+    github: "https://github.com/abayomi1196/Clean-playlists",
+    summary:
+      "Purify your explicit Spotify playlists - creates new non-explicit playlists based on existing explicit ones "
+  },
+
+  {
     title: "Anime Webpage",
     image:
       "https://res.cloudinary.com/ayo-clodinary/image/upload/v1638645637/anime-webpage_rw9dat.png",
@@ -18,6 +29,7 @@ export const projects: projectType[] = [
     summary:
       "Users can view all popular animes, search for their favorite, also access each anime's character list and other related media as well."
   },
+
   {
     title: "OctoList Github Project",
     image:
@@ -27,17 +39,6 @@ export const projects: projectType[] = [
     github: "https://github.com/abayomi1196/github-graphql-app",
     summary:
       "Web application built on the Github GraphQL API, allows users to search for a username, and view some brief details about a GitHub profile."
-  },
-
-  {
-    title: "Movie Search App",
-    image:
-      "https://res.cloudinary.com/ayo-clodinary/image/upload/v1636019520/movie-app_qr5fbx.png",
-    stack: ["NuxtJS", "SCSS", "Heroku"],
-    url: "https://ayos-movie-app.herokuapp.com/",
-    github: "https://github.com/abayomi1196/nuxt-movie-app",
-    summary:
-      "Web Application showing currently the top currently streaming movies in cinemas and online platforms. "
   },
 
   {
