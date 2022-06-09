@@ -12,7 +12,7 @@ export const projects: projectType[] = [
     title: "Spotify Purify Playlists",
     image:
       "https://res.cloudinary.com/ayo-clodinary/image/upload/v1654809163/purify-playlists_cw3hw5.png",
-    stack: ["React", "Node", "Express"],
+    stack: ["React", "Typescript", "Express"],
     url: "https://playlist-purify.herokuapp.com/",
     github: "https://github.com/abayomi1196/Clean-playlists",
     summary:

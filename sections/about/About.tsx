@@ -1,14 +1,8 @@
 // @ts-nocheck
 
-import { Wrapper, Container, SkillsSection } from "./About.styled";
+import { Wrapper, Container } from "./About.styled";
 import { Element as ScrollElement } from "react-scroll";
 import Fade from "react-reveal/Fade";
-
-import JavascriptLogo from "public/javascript.svg";
-import TypescriptLogo from "public/typescript.svg";
-import ReactLogo from "public/react-js.svg";
-import VueLogo from "public/vue.svg";
-import GraphQl from "public/graph-ql.svg";
 
 const About = () => {
   return (
@@ -39,32 +33,6 @@ const About = () => {
                   with clean, maintainable code. Always looking to learn new
                   skills and improve on existing knowledge, hoping to contribute
                   to making the world a better place.
-                </p>
-
-                <p>
-                  By dedicating a lot of my free time to learning and practice,
-                  collaborating on freelance projects & growing professional
-                  experience, i&apos;ve been able to gain a solid understanding
-                  of the following technologies:
-                  <SkillsSection>
-                    <ul>
-                      <li>
-                        <JavascriptLogo />
-                      </li>
-                      <li>
-                        <TypescriptLogo />
-                      </li>
-                      <li>
-                        <ReactLogo />
-                      </li>
-                      <li>
-                        <VueLogo />
-                      </li>
-                      <li>
-                        <GraphQl />
-                      </li>
-                    </ul>
-                  </SkillsSection>
                 </p>
               </Fade>
             </div>
