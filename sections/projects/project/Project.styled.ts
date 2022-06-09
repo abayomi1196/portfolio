@@ -1,29 +1,31 @@
-import tw, { styled, css } from 'twin.macro';
+import tw, { styled, css } from "twin.macro";
 
 export const ProjectLink = styled.a(() => [
   tw`
-    block shadow-md p-5 transition-all
-    hover:(shadow-lg)
+    block shadow-md p-5 transition-all drop-shadow-lg border-2 border-opacity-5 rounded-lg
+    hover:(shadow-lg ) 
     focus:(outline-none) 
     focus-visible:(ring-2 ring-offset-2 ring-sky-500 ring-opacity-60 outline-none)
     
-    `,
+    `
 ]);
 
 export const ImageWrapper = styled.div(() => [
-  tw`mb-4 rounded-lg relative`,
+  tw`mb-4 relative mx-[-20px] mt-[-20px] overflow-hidden rounded-lg`,
 
   css`
-    & img {
-      ${tw` 
+    & {
+      img {
+        ${tw` 
       transform
       transition-all
       duration-300
       group-hover:(scale-105) 
       group-focus:(scale-105)
     `}
+      }
     }
-  `,
+  `
 ]);
 
 export const Title = tw.h2`text-lg font-bold mb-3 text-gray-400 transition-all

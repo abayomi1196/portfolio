@@ -6,14 +6,14 @@ import {
   ImageWrapper,
   ProjectLink,
   Title,
-  MoreLink,
+  MoreLink
 } from "./Project.styled";
 
 const Project = ({
   title,
   slug,
   image,
-  summary,
+  summary
 }: {
   title: string;
   slug: string;

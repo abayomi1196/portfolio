@@ -1,4 +1,4 @@
-import tw, { styled, css } from 'twin.macro';
+import tw, { styled, css } from "twin.macro";
 
 export const Wrapper = tw.div`container px-4 my-20`;
 
@@ -15,6 +15,6 @@ dark:(text-gray-500)
 `;
 
 export const ProjectsContainer = styled.div(() => [
-  tw`mt-5 py-10 
-  sm:(grid grid-cols-2 gap-2) lg:(gap-5) xl:(gap-10)`,
+  tw`mt-5 py-10 space-y-8
+  sm:(grid grid-cols-2 gap-4 space-y-0) lg:(gap-5) xl:(gap-10)`
 ]);
