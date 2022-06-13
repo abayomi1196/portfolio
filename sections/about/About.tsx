@@ -22,7 +22,7 @@ const About = () => {
             <Fade bottom>
               <h2>I&apos;m Ayo.</h2>
               <h3>
-                Front End <span>Developer</span> based in Abuja, Nigeria.
+                Web <span>Developer</span> based in Abuja, Nigeria.
               </h3>
             </Fade>
 
