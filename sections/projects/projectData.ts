@@ -42,13 +42,13 @@ export const projects: projectType[] = [
   },
 
   {
-    title: "Netflix Clone",
+    title: "React CreditCard Validator",
     image:
-      "https://res.cloudinary.com/ayo-clodinary/image/upload/v1629496485/netflix-preview_l1zrjm.png",
-    stack: ["React", "Styled Components", "Firebase"],
-    url: "https://ayosnetflixclone2.netlify.app/",
-    github: "https://github.com/abayomi1196/netflix-clone",
+      "https://res.cloudinary.com/ayo-clodinary/image/upload/v1655150835/rccf_umnxto.png",
+    stack: ["React", "Typescript"],
+    url: "https://www.npmjs.com/package/react-creditcard-validator",
+    github: "https://github.com/abayomi1196/react-creditcard-validator",
     summary:
-      "My attempt at cloning the popular streaming service.  You can unfortunately only watch one video :)"
+      "A React Custom Hook to provide validation and formatting for payment card input fields. Written completely in TypeScript."
   }
 ];
