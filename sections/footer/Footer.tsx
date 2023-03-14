@@ -18,14 +18,6 @@ const Footer = () => {
 
           <div>
             <a
-              href='https://twitter.com/SirKamara'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Twitter
-            </a>
-
-            <a
               href='https://www.linkedin.com/in/abayomi-ayodele-77a565131/'
               target='_blank'
               rel='noreferrer'
