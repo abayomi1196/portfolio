@@ -22,17 +22,17 @@ const About = () => {
             <Fade bottom>
               <h2>I&apos;m Ayo.</h2>
               <h3>
-                Web <span>Developer</span> based in Abuja, Nigeria.
+                Software <span>Engineer</span> based in Abuja, Nigeria.
               </h3>
             </Fade>
 
             <div>
               <Fade delay={500}>
                 <p>
-                  A software engineer who enjoys solving real-world problems
-                  with clean, maintainable code. Always looking to learn new
-                  skills and improve on existing knowledge, hoping to contribute
-                  to making the world a better place.
+                  Enjoys solving real-world problems with clean, maintainable
+                  code. Always looking to learn new skills and improve on
+                  existing knowledge, hoping to contribute to making the world a
+                  better place.
                 </p>
               </Fade>
             </div>

@@ -9,6 +9,15 @@ export type projectType = {
 
 export const projects: projectType[] = [
   {
+    title: "North | Online consultations",
+    image:
+      "https://res.cloudinary.com/ayo-clodinary/image/upload/v1718489820/Screenshot_2024-06-15_at_23.16.41_tloyzt.png",
+    stack: ["React-Native", "Typescript", "Open AI"],
+    url: "https://play.google.com/store/apps/details?id=com.pneumacare.north&hl=en_GB",
+    summary:
+      "Mobile application powering patient consultations (a live chat system), medications purchase, and quick doctor questions/answers, among others."
+  },
+  {
     title: "React CreditCard Validator",
     image:
       "https://res.cloudinary.com/ayo-clodinary/image/upload/v1655150835/rccf_umnxto.png",
@@ -36,28 +45,6 @@ export const projects: projectType[] = [
     stack: ["NextJS", "Typescript", "Algolia"],
     url: "https://www.pneumapage.com/",
     summary:
-      "A provider marketplace where prospective patients can shop/search for healthcare providers based on their patient traction and average ratings using NextJS, Typescript, and Styled Components."
-  },
-
-  {
-    title: "Anime Webpage",
-    image:
-      "https://res.cloudinary.com/ayo-clodinary/image/upload/v1638645637/anime-webpage_rw9dat.png",
-    stack: ["NextJS", "GraphQL"],
-    url: "https://anime-webpage.vercel.app/",
-    github: "https://github.com/abayomi1196/anime-webpage",
-    summary:
-      "Users can view all popular animes, search for their favorite, also access each anime's character list and other related media as well."
-  },
-
-  {
-    title: "OctoList Github Project",
-    image:
-      "https://res.cloudinary.com/ayo-clodinary/image/upload/v1638645597/octo-list_q7cafi.png",
-    stack: ["React", "Typescript", "GraphQL"],
-    url: "https://octo-list.netlify.app/",
-    github: "https://github.com/abayomi1196/github-graphql-app",
-    summary:
-      "Web application built on the Github GraphQL API, allows users to search for a username, and view some brief details about a GitHub profile."
+      "A provider marketplace where prospective patients can shop/search for healthcare providers based on their patient traction and average ratings."
   }
 ];
